@@ -1,0 +1,594 @@
+@import url(http://fonts.googleapis.com/css?family=Slabo+27px);
+@import url(http://fonts.googleapis.com/css?family=Raleway:500,700,400);
+@import "variables";
+
+/* === === === === Tool Box Theme Css === === === === */
+
+body {
+    background: #282827 url('images/bg.png') repeat top left;
+    margin-top: @y * @b;
+    font-size: @d + @b + @b;
+    font-family: 'Raleway', sans-serif;
+    line-height: @x + @b + @a;
+    color: @text-white;
+}
+
+header {
+    border-bottom: @b dashed @gray-60;
+}
+
+h1 {
+    color: @text-white;
+    font-size: @x * @b + @x;
+    font-weight: normal;
+}
+
+h2 {
+    color: @text-white;
+    border-bottom: @a dashed @gray-60;
+    padding: @b @z @c @b;
+    font-weight: normal;
+}
+
+h3 {
+    color: @text-white;
+    padding: @d @z @z @z;
+    font-weight: normal;
+    font-size: @d + @b + @b;
+    text-transform: capitalize;
+}
+
+
+.center {
+    float: none !important;
+}
+
+footer {
+    border-top: @b dashed @gray-60;
+    font-size: @d + @b;
+    text-align: center;
+}
+
+#html {
+    border: 1px solid #e1e1e8 !important;
+    clear: both;
+    margin-bottom: 30px;
+    border-radius: 4px 4px;
+    position: relative;
+
+    pre {
+        padding: @d @d @d 16px;
+        font-size: 13px;
+        line-height: 1.42857143;
+        color: #333;
+        word-break: break-all;
+        word-wrap: break-word;
+        background-color: #444;
+        margin: @z;
+        border: @z solid #e1e1e8 !important;
+        border-radius: 4px;
+
+        .tag {
+            color: #89bdff;
+        }
+
+        .atn {
+            color: #bdb76b;
+        }
+
+        .pun {
+            color: #fff;
+        }
+
+        .atv {
+            color: #65B042;
+        }
+    }
+}
+
+/* === === === === Tool Box Css === === === === */
+.toolbox {
+    margin: @z;
+    padding: @z;
+    border: @a @toolbox-border solid;
+    display: inline-block;
+
+    .title {
+        margin: @z;
+        padding: @b;
+        border-bottom: @a solid @title-border;
+        background: @title-bg;
+        color: @title-color;
+        float: @left;
+        width: @yf * @bf;
+
+        .title_name {
+            float: @right;
+            padding: @b + @a @c @z @z;
+            font-size: @d + @b;
+        }
+
+        .title_btn {
+            float: @left;
+            padding: @z @z @z @b;
+
+            button {
+                color: @title-button-color;
+                text-decoration: @none;
+                font-size: @d + @a;
+                background: @none;
+                border: @z;
+                outline: @none;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .toolbox_menu {
+        float: @left;
+        margin: @z;
+        padding: @z;
+
+        ul {
+            margin: @z;
+            padding: @z;
+
+            li {
+                margin: @z;
+                list-style: @none;
+                background: @toolbox-menu-bg;
+                clear: both;
+                border: @a solid @toolbox-menu-border;
+                padding: @c @d;
+                overflow: hidden;
+                cursor: pointer;
+                color: @toolbox-menu-color;
+
+                &.active {
+                    color: @toolbox-menu-color-active !important;
+                }
+
+                &:hover {
+                    color: @toolbox-menu-color-active;
+                }
+
+                span {
+                    float: @left;
+                    height: @x + @b;
+                    line-height: @x + @b;
+                }
+
+                p {
+                    float: @left;
+                    margin: @z @z @z @c;
+                    padding: @z;
+                    height: @x + @b;
+                    line-height: @x + @b;
+                }
+            }
+        }
+    }
+}
+
+/* === === === === Tool Box Line === === === === */
+.toolbox-line {
+    margin: @z;
+    padding: @z;
+    border: @a @toolbox-line-border solid;
+    display: inline-block;
+
+    .title {
+        margin: @z;
+        padding: @a;
+        border-bottom: @a solid @titl-line-border;
+        background: @title-line-bg;
+        color: @title-line-color;
+        float: @left;
+        width: @yf * @bf;
+
+        .title_name {
+            float: @right;
+            padding: @b + @a @c @z @z;
+            font-size: @d + @b;
+        }
+
+        .title_btn {
+            float: @left;
+            padding: @z @z @z @b;
+
+            button {
+                color: @title-line-button-color;
+                text-decoration: @none;
+                font-size: @d + @a;
+                background: @none;
+                border: @z;
+                outline: @none;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .toolbox-line-left, .toolbox-line-right {
+        float: @left;
+        margin: @z;
+        padding: @z;
+
+        ul {
+            margin: @z;
+            padding: @z;
+
+            li {
+                margin: @z;
+                list-style: @none;
+                background: @toolboxline-bg;
+                clear: both;
+                border: @z solid @toolboxline-border;
+                padding: @c @d;
+                overflow: hidden;
+                cursor: pointer;
+                color: @toolboxline-color;
+
+                &:hover {
+                    color: @toolboxline-color-active;
+                }
+
+                &.active {
+                    color: @toolboxline-color-active;
+                }
+
+                span {
+                    float: @left;
+                    height: @x + @b;
+                    line-height: @x + @b;
+                }
+
+                p {
+                    float: @left;
+                    margin: @z @z @z @c;
+                    padding: @z;
+                    height: @x + @b;
+                    line-height: @x + @b;
+                }
+            }
+        }
+    }
+}
+
+/* === === === === Tool Box without text === === === === */
+.toolbox-without-text {
+    margin: @z;
+    padding: @z;
+    border: @a @titl-withouttext-border solid;
+    display: inline-block;
+
+    .title {
+        margin: @z;
+        padding: @b;
+        border-bottom: @a solid @titl-withouttext-border;
+        background: @title-withouttext-bg;
+        color: @title-withouttext-color;
+        float: @left;
+        width: @yf * @bf;
+
+        .title_name {
+            float: @right;
+            padding: @b + @a @c @z @z;
+            font-size: @d + @b;
+        }
+
+        .title_btn {
+            float: @left;
+            padding: @z @z @z @b;
+
+            button {
+                color: @title-withouttext-button-color;
+                text-decoration: @none;
+                font-size: @d + @a;
+                background: @none;
+                border: @z;
+                outline: @none;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .toolbox-line-left, .toolbox-line-right {
+        float: @left;
+        margin: @z;
+        padding: @z;
+
+        ul {
+            margin: @z;
+            padding: @z;
+
+            li {
+                margin: @z;
+                list-style: @none;
+                background: @toolbox-withouttext-bg;
+                clear: both;
+                border: @a solid @toolbox-withouttext-border;
+                padding: @c @d;
+                overflow: hidden;
+                cursor: pointer;
+                color: @toolbox-withouttext-color;
+
+                &:hover {
+                    color: @toolbox-withouttext-color-active;
+                }
+
+                &.active {
+                    color: @toolbox-withouttext-color-active;
+                }
+
+                span {
+                    float: @left;
+                    height: @x + @b;
+                    line-height: @x + @b;
+                }
+
+                p {
+                    float: @left;
+                    margin: @z @z @z @c;
+                    padding: @z;
+                    height: @x + @b;
+                    line-height: @x + @b;
+                    display: @none;
+                }
+            }
+        }
+    }
+}
+
+.both {
+    clear: both;
+}
+
+.hide {
+    display: @none;
+}
+
+.show {
+    display: @block;
+}
+/* === === === === Tool Box colors === === === === */
+#toolbox-color {
+    .blue() {
+        border: @a @toolbox-blue-border solid;
+
+        .title {
+            border-bottom: @a solid @title-blue-border;
+            background: @title-blue-bg;
+            color: @title-blue-color;
+
+            .title_btn {
+                button {
+                    color: @title-blue-button-color;
+                }
+            }
+        }
+
+        .toolbox_menu {
+            ul {
+                li {
+                    background: @toolbox-blue-menu-bg;
+                    border: @a solid @toolbox-blue-menu-border;
+                    color: @toolbox-blue-menu-color;
+
+                    &.active, &:hover {
+                        color: @toolbox-blue-menu-color-active !important;
+                    }
+                }
+            }
+        }
+    }
+
+    .cyan() {
+        border: @a @toolbox-cyan-border solid;
+
+        .title {
+            border-bottom: @a solid @title-cyan-border;
+            background: @title-cyan-bg;
+            color: @title-cyan-color;
+
+            .title_btn {
+                button {
+                    color: @title-cyan-button-color;
+                }
+            }
+        }
+
+        .toolbox_menu {
+            ul {
+                li {
+                    background: @toolbox-cyan-menu-bg;
+                    border: @a solid @toolbox-cyan-menu-border;
+                    color: @toolbox-cyan-menu-color;
+
+                    &.active, &:hover {
+                        color: @toolbox-cyan-menu-color-active !important;
+                    }
+                }
+            }
+        }
+    }
+
+    .green() {
+        border: @a @toolbox-green-border solid;
+
+        .title {
+            border-bottom: @a solid @title-green-border;
+            background: @title-green-bg;
+            color: @title-green-color;
+
+            .title_btn {
+                button {
+                    color: @title-green-button-color;
+                }
+            }
+        }
+
+        .toolbox_menu {
+            ul {
+                li {
+                    background: @toolbox-green-menu-bg;
+                    border: @a solid @toolbox-green-menu-border;
+                    color: @toolbox-green-menu-color;
+
+                    &.active, &:hover {
+                        color: @toolbox-green-menu-color-active !important;
+                    }
+                }
+            }
+        }
+    }
+
+    .orange() {
+        border: @a @toolbox-orange-border solid;
+
+        .title {
+            border-bottom: @a solid @title-orange-border;
+            background: @title-orange-bg;
+            color: @title-orange-color;
+
+            .title_btn {
+                button {
+                    color: @title-orange-button-color;
+                }
+            }
+        }
+
+        .toolbox_menu {
+            ul {
+                li {
+                    background: @toolbox-orange-menu-bg;
+                    border: @a solid @toolbox-orange-menu-border;
+                    color: @toolbox-orange-menu-color;
+
+                    &.active, &:hover {
+                        color: @toolbox-orange-menu-color-active !important;
+                    }
+                }
+            }
+        }
+    }
+
+    .red() {
+        border: @a @toolbox-red-border solid;
+
+        .title {
+            border-bottom: @a solid @title-red-border;
+            background: @title-red-bg;
+            color: @title-red-color;
+
+            .title_btn {
+                button {
+                    color: @title-red-button-color;
+                }
+            }
+        }
+
+        .toolbox_menu {
+            ul {
+                li {
+                    background: @toolbox-red-menu-bg;
+                    border: @a solid @toolbox-red-menu-border;
+                    color: @toolbox-red-menu-color;
+
+                    &.active, &:hover {
+                        color: @toolbox-red-menu-color-active !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#toolbox-blue, #toolbox-cyan, #toolbox-green, #toolbox-orange, #toolbox-red {
+    margin: @z;
+    padding: @z;
+    display: inline-block;
+
+    .title {
+        margin: @z;
+        padding: @b;
+        float: @left;
+        width: @yf * @bf;
+
+        .title_name {
+            float: @right;
+            padding: @b + @a @c @z @z;
+            font-size: @d + @b;
+        }
+
+        .title_btn {
+            float: @left;
+            padding: @z @z @z @b;
+
+            button {
+                text-decoration: @none;
+                font-size: @d + @a;
+                background: @none;
+                border: @z;
+                outline: @none;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .toolbox_menu {
+        float: @left;
+        margin: @z;
+        padding: @z;
+
+        ul {
+            margin: @z;
+            padding: @z;
+
+            li {
+                margin: @z;
+                list-style: @none;
+                clear: both;
+                padding: @c @d;
+                overflow: hidden;
+                cursor: pointer;
+
+                span {
+                    float: @left;
+                    height: @x + @b;
+                    line-height: @x + @b;
+                }
+
+                p {
+                    float: @left;
+                    margin: @z @z @z @c;
+                    padding: @z;
+                    height: @x + @b;
+                    line-height: @x + @b;
+                }
+            }
+        }
+    }
+}
+
+
+/* === === === === Blue Colors === === === === */
+#toolbox-blue {
+    #toolbox-color > .blue;
+}
+
+/* === === === === Cyan Colors === === === === */
+#toolbox-cyan {
+    #toolbox-color > .cyan;
+}
+/* === === === === Green Colors === === === === */
+#toolbox-green {
+    #toolbox-color > .green;
+}
+/* === === === === Orange Colors === === === === */
+#toolbox-orange {
+    #toolbox-color > .orange;
+}
+/* === === === === Red Colors === === === === */
+#toolbox-red {
+    #toolbox-color > .red;
+}
