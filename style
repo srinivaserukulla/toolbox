@@ -1,0 +1,514 @@
+@import url(http://fonts.googleapis.com/css?family=Slabo+27px);
+@import url(http://fonts.googleapis.com/css?family=Raleway:500,700,400);
+/* === === === === Tool Box Theme Css === === === === */
+body {
+  background: #282827 url('images/bg.png') repeat top left;
+  margin-top: 100px;
+  font-size: 14px;
+  font-family: 'Raleway', sans-serif;
+  line-height: 23px;
+  color: #ffffff;
+}
+header {
+  border-bottom: 2px dashed #666666;
+}
+h1 {
+  color: #ffffff;
+  font-size: 60px;
+  font-weight: normal;
+}
+h2 {
+  color: #ffffff;
+  border-bottom: 1px dashed #666666;
+  padding: 2px 0 5px 2px;
+  font-weight: normal;
+}
+h3 {
+  color: #ffffff;
+  padding: 10px 0 0 0;
+  font-weight: normal;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+.center {
+  float: none !important;
+}
+footer {
+  border-top: 2px dashed #666666;
+  font-size: 12px;
+  text-align: center;
+}
+#html {
+  border: 1px solid #e1e1e8 !important;
+  clear: both;
+  margin-bottom: 30px;
+  border-radius: 4px 4px;
+  position: relative;
+}
+#html pre {
+  padding: 10px 10px 10px 16px;
+  font-size: 13px;
+  line-height: 1.42857143;
+  color: #333;
+  word-break: break-all;
+  word-wrap: break-word;
+  background-color: #444;
+  margin: 0;
+  border: 0 solid #e1e1e8 !important;
+  border-radius: 4px;
+}
+#html pre .tag {
+  color: #89bdff;
+}
+#html pre .atn {
+  color: #bdb76b;
+}
+#html pre .pun {
+  color: #fff;
+}
+#html pre .atv {
+  color: #65B042;
+}
+/* === === === === Tool Box Css === === === === */
+.toolbox {
+  margin: 0;
+  padding: 0;
+  border: 1px #000000 solid;
+  display: inline-block;
+}
+.toolbox .title {
+  margin: 0;
+  padding: 2px;
+  border-bottom: 1px solid #000000;
+  background: #4d4d4d;
+  color: #ffffff;
+  float: left;
+  width: 100%;
+}
+.toolbox .title .title_name {
+  float: right;
+  padding: 3px 5px 0 0;
+  font-size: 12px;
+}
+.toolbox .title .title_btn {
+  float: left;
+  padding: 0 0 0 2px;
+}
+.toolbox .title .title_btn button {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 11px;
+  background: none;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+.toolbox .toolbox_menu {
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+.toolbox .toolbox_menu ul {
+  margin: 0;
+  padding: 0;
+}
+.toolbox .toolbox_menu ul li {
+  margin: 0;
+  list-style: none;
+  background: #ffffff;
+  clear: both;
+  border: 1px solid #e6e6e6;
+  padding: 5px 10px;
+  overflow: hidden;
+  cursor: pointer;
+  color: #666666;
+}
+.toolbox .toolbox_menu ul li.active {
+  color: #3eceb5 !important;
+}
+.toolbox .toolbox_menu ul li:hover {
+  color: #3eceb5;
+}
+.toolbox .toolbox_menu ul li span {
+  float: left;
+  height: 22px;
+  line-height: 22px;
+}
+.toolbox .toolbox_menu ul li p {
+  float: left;
+  margin: 0 0 0 5px;
+  padding: 0;
+  height: 22px;
+  line-height: 22px;
+}
+/* === === === === Tool Box Line === === === === */
+.toolbox-line {
+  margin: 0;
+  padding: 0;
+  border: 1px #000000 solid;
+  display: inline-block;
+}
+.toolbox-line .title {
+  margin: 0;
+  padding: 1px;
+  border-bottom: 1px solid #000000;
+  background: #4d4d4d;
+  color: #ffffff;
+  float: left;
+  width: 100%;
+}
+.toolbox-line .title .title_name {
+  float: right;
+  padding: 3px 5px 0 0;
+  font-size: 12px;
+}
+.toolbox-line .title .title_btn {
+  float: left;
+  padding: 0 0 0 2px;
+}
+.toolbox-line .title .title_btn button {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 11px;
+  background: none;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+.toolbox-line .toolbox-line-left,
+.toolbox-line .toolbox-line-right {
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+.toolbox-line .toolbox-line-left ul,
+.toolbox-line .toolbox-line-right ul {
+  margin: 0;
+  padding: 0;
+}
+.toolbox-line .toolbox-line-left ul li,
+.toolbox-line .toolbox-line-right ul li {
+  margin: 0;
+  list-style: none;
+  background: #ffffff;
+  clear: both;
+  border: 0 solid #e6e6e6;
+  padding: 5px 10px;
+  overflow: hidden;
+  cursor: pointer;
+  color: #666666;
+}
+.toolbox-line .toolbox-line-left ul li:hover,
+.toolbox-line .toolbox-line-right ul li:hover {
+  color: #3eceb5;
+}
+.toolbox-line .toolbox-line-left ul li.active,
+.toolbox-line .toolbox-line-right ul li.active {
+  color: #3eceb5;
+}
+.toolbox-line .toolbox-line-left ul li span,
+.toolbox-line .toolbox-line-right ul li span {
+  float: left;
+  height: 22px;
+  line-height: 22px;
+}
+.toolbox-line .toolbox-line-left ul li p,
+.toolbox-line .toolbox-line-right ul li p {
+  float: left;
+  margin: 0 0 0 5px;
+  padding: 0;
+  height: 22px;
+  line-height: 22px;
+}
+/* === === === === Tool Box without text === === === === */
+.toolbox-without-text {
+  margin: 0;
+  padding: 0;
+  border: 1px #000000 solid;
+  display: inline-block;
+}
+.toolbox-without-text .title {
+  margin: 0;
+  padding: 2px;
+  border-bottom: 1px solid #000000;
+  background: #4d4d4d;
+  color: #ffffff;
+  float: left;
+  width: 100%;
+}
+.toolbox-without-text .title .title_name {
+  float: right;
+  padding: 3px 5px 0 0;
+  font-size: 12px;
+}
+.toolbox-without-text .title .title_btn {
+  float: left;
+  padding: 0 0 0 2px;
+}
+.toolbox-without-text .title .title_btn button {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 11px;
+  background: none;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+.toolbox-without-text .toolbox-line-left,
+.toolbox-without-text .toolbox-line-right {
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+.toolbox-without-text .toolbox-line-left ul,
+.toolbox-without-text .toolbox-line-right ul {
+  margin: 0;
+  padding: 0;
+}
+.toolbox-without-text .toolbox-line-left ul li,
+.toolbox-without-text .toolbox-line-right ul li {
+  margin: 0;
+  list-style: none;
+  background: #ffffff;
+  clear: both;
+  border: 1px solid #e6e6e6;
+  padding: 5px 10px;
+  overflow: hidden;
+  cursor: pointer;
+  color: #666666;
+}
+.toolbox-without-text .toolbox-line-left ul li:hover,
+.toolbox-without-text .toolbox-line-right ul li:hover {
+  color: #3eceb5;
+}
+.toolbox-without-text .toolbox-line-left ul li.active,
+.toolbox-without-text .toolbox-line-right ul li.active {
+  color: #3eceb5;
+}
+.toolbox-without-text .toolbox-line-left ul li span,
+.toolbox-without-text .toolbox-line-right ul li span {
+  float: left;
+  height: 22px;
+  line-height: 22px;
+}
+.toolbox-without-text .toolbox-line-left ul li p,
+.toolbox-without-text .toolbox-line-right ul li p {
+  float: left;
+  margin: 0 0 0 5px;
+  padding: 0;
+  height: 22px;
+  line-height: 22px;
+  display: none;
+}
+.both {
+  clear: both;
+}
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
+/* === === === === Tool Box colors === === === === */
+#toolbox-blue,
+#toolbox-cyan,
+#toolbox-green,
+#toolbox-orange,
+#toolbox-red {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+#toolbox-blue .title,
+#toolbox-cyan .title,
+#toolbox-green .title,
+#toolbox-orange .title,
+#toolbox-red .title {
+  margin: 0;
+  padding: 2px;
+  float: left;
+  width: 100%;
+}
+#toolbox-blue .title .title_name,
+#toolbox-cyan .title .title_name,
+#toolbox-green .title .title_name,
+#toolbox-orange .title .title_name,
+#toolbox-red .title .title_name {
+  float: right;
+  padding: 3px 5px 0 0;
+  font-size: 12px;
+}
+#toolbox-blue .title .title_btn,
+#toolbox-cyan .title .title_btn,
+#toolbox-green .title .title_btn,
+#toolbox-orange .title .title_btn,
+#toolbox-red .title .title_btn {
+  float: left;
+  padding: 0 0 0 2px;
+}
+#toolbox-blue .title .title_btn button,
+#toolbox-cyan .title .title_btn button,
+#toolbox-green .title .title_btn button,
+#toolbox-orange .title .title_btn button,
+#toolbox-red .title .title_btn button {
+  text-decoration: none;
+  font-size: 11px;
+  background: none;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+#toolbox-blue .toolbox_menu,
+#toolbox-cyan .toolbox_menu,
+#toolbox-green .toolbox_menu,
+#toolbox-orange .toolbox_menu,
+#toolbox-red .toolbox_menu {
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+#toolbox-blue .toolbox_menu ul,
+#toolbox-cyan .toolbox_menu ul,
+#toolbox-green .toolbox_menu ul,
+#toolbox-orange .toolbox_menu ul,
+#toolbox-red .toolbox_menu ul {
+  margin: 0;
+  padding: 0;
+}
+#toolbox-blue .toolbox_menu ul li,
+#toolbox-cyan .toolbox_menu ul li,
+#toolbox-green .toolbox_menu ul li,
+#toolbox-orange .toolbox_menu ul li,
+#toolbox-red .toolbox_menu ul li {
+  margin: 0;
+  list-style: none;
+  clear: both;
+  padding: 5px 10px;
+  overflow: hidden;
+  cursor: pointer;
+}
+#toolbox-blue .toolbox_menu ul li span,
+#toolbox-cyan .toolbox_menu ul li span,
+#toolbox-green .toolbox_menu ul li span,
+#toolbox-orange .toolbox_menu ul li span,
+#toolbox-red .toolbox_menu ul li span {
+  float: left;
+  height: 22px;
+  line-height: 22px;
+}
+#toolbox-blue .toolbox_menu ul li p,
+#toolbox-cyan .toolbox_menu ul li p,
+#toolbox-green .toolbox_menu ul li p,
+#toolbox-orange .toolbox_menu ul li p,
+#toolbox-red .toolbox_menu ul li p {
+  float: left;
+  margin: 0 0 0 5px;
+  padding: 0;
+  height: 22px;
+  line-height: 22px;
+}
+/* === === === === Blue Colors === === === === */
+#toolbox-blue {
+  border: 1px #23a7e0 solid;
+}
+#toolbox-blue .title {
+  border-bottom: 1px solid #23a7e0;
+  background: #50b9e6;
+  color: #ffffff;
+}
+#toolbox-blue .title .title_btn button {
+  color: #ffffff;
+}
+#toolbox-blue .toolbox_menu ul li {
+  background: #ffffff;
+  border: 1px solid #e6e6e6;
+  color: #666666;
+}
+#toolbox-blue .toolbox_menu ul li.active,
+#toolbox-blue .toolbox_menu ul li:hover {
+  color: #50b9e6 !important;
+}
+/* === === === === Cyan Colors === === === === */
+#toolbox-cyan {
+  border: 1px #2eb59e solid;
+}
+#toolbox-cyan .title {
+  border-bottom: 1px solid #2eb59e;
+  background: #3eceb5;
+  color: #ffffff;
+}
+#toolbox-cyan .title .title_btn button {
+  color: #ffffff;
+}
+#toolbox-cyan .toolbox_menu ul li {
+  background: #ffffff;
+  border: 1px solid #e6e6e6;
+  color: #666666;
+}
+#toolbox-cyan .toolbox_menu ul li.active,
+#toolbox-cyan .toolbox_menu ul li:hover {
+  color: #3eceb5 !important;
+}
+/* === === === === Green Colors === === === === */
+#toolbox-green {
+  border: 1px #87c940 solid;
+}
+#toolbox-green .title {
+  border-bottom: 1px solid #87c940;
+  background: #a0d468;
+  color: #ffffff;
+}
+#toolbox-green .title .title_btn button {
+  color: #ffffff;
+}
+#toolbox-green .toolbox_menu ul li {
+  background: #ffffff;
+  border: 1px solid #e6e6e6;
+  color: #666666;
+}
+#toolbox-green .toolbox_menu ul li.active,
+#toolbox-green .toolbox_menu ul li:hover {
+  color: #a0d468 !important;
+}
+/* === === === === Orange Colors === === === === */
+#toolbox-orange {
+  border: 1px #f78d11 solid;
+}
+#toolbox-orange .title {
+  border-bottom: 1px solid #f78d11;
+  background: #f9a542;
+  color: #ffffff;
+}
+#toolbox-orange .title .title_btn button {
+  color: #ffffff;
+}
+#toolbox-orange .toolbox_menu ul li {
+  background: #ffffff;
+  border: 1px solid #e6e6e6;
+  color: #666666;
+}
+#toolbox-orange .toolbox_menu ul li.active,
+#toolbox-orange .toolbox_menu ul li:hover {
+  color: #f9a542 !important;
+}
+/* === === === === Red Colors === === === === */
+#toolbox-red {
+  border: 1px #ff2e2d solid;
+}
+#toolbox-red .title {
+  border-bottom: 1px solid #ff2e2d;
+  background: #ff6160;
+  color: #ffffff;
+}
+#toolbox-red .title .title_btn button {
+  color: #ffffff;
+}
+#toolbox-red .toolbox_menu ul li {
+  background: #ffffff;
+  border: 1px solid #e6e6e6;
+  color: #666666;
+}
+#toolbox-red .toolbox_menu ul li.active,
+#toolbox-red .toolbox_menu ul li:hover {
+  color: #ff6160 !important;
+}
