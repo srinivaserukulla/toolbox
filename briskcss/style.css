@@ -1159,7 +1159,7 @@ select.bc-form-row-small .bc-form-control {
   src: url('http://websrinivas.info.cm/briskcss/fonts/briskicon.eot');
   src: url('http://websrinivas.info.cm/briskcss/fonts/briskicon.eot') format('embedded-opentype'), 
   url('http://websrinivas.info.cm/briskcss/fonts/briskicon.woff') format('woff'), 
-  url('http://websrinivas.info.cm/briskcss/fonts/briskicon.ttf') format('truetype'), 
+  url('../fonts/briskicon.ttf') format('truetype'), 
   url('http://websrinivas.info.cm/briskcss/fonts/briskicon.svg') format('svg');
   font-weight: normal;
   font-style: normal;
