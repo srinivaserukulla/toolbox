@@ -1,17 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Slabo+27px);
 @import url(http://fonts.googleapis.com/css?family=Raleway:500,700,400);
-@font-face {
-	font-family: briskicon;
-	src: url('http://websrinivas.info.cm/briskcss/fonts/briskicon.eot');
-	src:url('http://websrinivas.info.cm/briskcss/fonts/briskicon.eot') format('embedded-opentype'),
-		url('http://websrinivas.info.cm/briskcss/fonts/briskicon.woff') format('woff'),
-		url('http://websrinivas.info.cm/briskcss/fonts/briskicon.ttf') format('truetype'),
-		url('http://websrinivas.info.cm/briskcss/fonts/briskicon.svg') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
-
-
 /* === === === === Tool Box Theme Css === === === === */
 body {
   background: #282827 url('images/bg.png') repeat top left;
@@ -41,6 +29,9 @@ h3 {
   font-weight: normal;
   font-size: 14px;
   text-transform: capitalize;
+}
+section ul li {
+  margin: 10px 0;
 }
 .center {
   float: none !important;
@@ -146,10 +137,17 @@ footer {
   height: 22px;
   line-height: 22px;
 }
+.toolbox .toolbox_menu ul li img {
+  float: left;
+  height: 22px;
+  line-height: 22px;
+}
 .toolbox .toolbox_menu ul li p {
   float: left;
   margin: 0 0 0 5px;
   padding: 0;
+  width: 80px;
+  overflow: hidden;
   height: 22px;
   line-height: 22px;
 }
@@ -204,7 +202,7 @@ footer {
   list-style: none;
   background: #ffffff;
   clear: both;
-  border: 0 solid #e6e6e6;
+  border: 1px solid #e6e6e6;
   padding: 5px 10px;
   overflow: hidden;
   cursor: pointer;
@@ -229,6 +227,8 @@ footer {
   float: left;
   margin: 0 0 0 5px;
   padding: 0;
+  width: 80px;
+  overflow: hidden;
   height: 22px;
   line-height: 22px;
 }
@@ -308,6 +308,8 @@ footer {
   float: left;
   margin: 0 0 0 5px;
   padding: 0;
+  width: 80px;
+  overflow: hidden;
   height: 22px;
   line-height: 22px;
   display: none;
@@ -416,6 +418,8 @@ footer {
   float: left;
   margin: 0 0 0 5px;
   padding: 0;
+  width: 80px;
+  overflow: hidden;
   height: 22px;
   line-height: 22px;
 }
@@ -524,3 +528,4 @@ footer {
 #toolbox-red .toolbox_menu ul li:hover {
   color: #ff6160 !important;
 }
+/*# sourceMappingURL=style.css.map */
