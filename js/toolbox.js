@@ -1,7 +1,7 @@
 $(document).ready(function () {
     //-toolbox
     $("#toolbox-close-btn").click(function () {
-        $("#toolbox-close-btn span").toggleClass("briskicon briskicon-backward2").toggleClass("briskicon briskicon-forward5");
+        $("#toolbox-close-btn span").toggleClass("briskicon briskicon-backward").toggleClass("briskicon briskicon-forward");
         $(".toolbox p").toggle("slide");
         $('.toolbox li').removeClass('active');
     });
@@ -13,7 +13,7 @@ $(document).ready(function () {
 
     //-toolbox-blue-color
     $("#toolbox-blue #toolbox-color-btn").click(function () {
-        $("#toolbox-blue #toolbox-color-btn span").toggleClass("briskicon briskicon-backward2").toggleClass("briskicon briskicon-forward5");
+        $("#toolbox-blue #toolbox-color-btn span").toggleClass("briskicon briskicon-backward").toggleClass("briskicon briskicon-forward");
         $("#toolbox-blue p").toggle("slide");
         $("#toolbox-blue li").removeClass("active");
     });
@@ -25,7 +25,7 @@ $(document).ready(function () {
 
     //-toolbox-cyan-color
     $("#toolbox-cyan #toolbox-color-btn").click(function () {
-        $("#toolbox-cyan #toolbox-color-btn span").toggleClass("briskicon briskicon-backward2").toggleClass("briskicon briskicon-forward5");
+        $("#toolbox-cyan #toolbox-color-btn span").toggleClass("briskicon briskicon-backward").toggleClass("briskicon briskicon-forward");
         $("#toolbox-cyan p").toggle("slide");
         $("#toolbox-cyan li").removeClass("active");
     });
@@ -37,7 +37,7 @@ $(document).ready(function () {
 
     //-toolbox-green-color
     $("#toolbox-green #toolbox-color-btn").click(function () {
-        $("#toolbox-green #toolbox-color-btn span").toggleClass("briskicon briskicon-backward2").toggleClass("briskicon briskicon-forward5");
+        $("#toolbox-green #toolbox-color-btn span").toggleClass("briskicon briskicon-backward").toggleClass("briskicon briskicon-forward");
         $("#toolbox-green p").toggle("slide");
         $("#toolbox-green li").removeClass("active");
     });
@@ -49,7 +49,7 @@ $(document).ready(function () {
 
     //-toolbox-orange-color
     $("#toolbox-orange #toolbox-color-btn").click(function () {
-        $("#toolbox-orange #toolbox-color-btn span").toggleClass("briskicon briskicon-backward2").toggleClass("briskicon briskicon-forward5");
+        $("#toolbox-orange #toolbox-color-btn span").toggleClass("briskicon briskicon-backward").toggleClass("briskicon briskicon-forward");
         $("#toolbox-orange p").toggle("slide");
         $("#toolbox-orange li").removeClass("active");
     });
@@ -61,7 +61,7 @@ $(document).ready(function () {
 
     //-toolbox-red-color
     $("#toolbox-red #toolbox-color-btn").click(function () {
-        $("#toolbox-red #toolbox-color-btn span").toggleClass("briskicon briskicon-backward2").toggleClass("briskicon briskicon-forward5");
+        $("#toolbox-red #toolbox-color-btn span").toggleClass("briskicon briskicon-backward").toggleClass("briskicon briskicon-forward");
         $("#toolbox-red p").toggle("slide");
         $("#toolbox-red li").removeClass("active");
     });
@@ -75,7 +75,7 @@ $(document).ready(function () {
 
     //toolbox-line
     $("#toolbox-line-btn").click(function () {
-        $("#toolbox-line-btn span").toggleClass("briskicon briskicon-backward2").toggleClass("briskicon briskicon-forward5");
+        $("#toolbox-line-btn span").toggleClass("briskicon briskicon-backward").toggleClass("briskicon briskicon-forward");
         $(".toolbox-line p.toolbox-text").toggle("slide");
 
         //$(".title_name").css("display","none");
@@ -97,7 +97,7 @@ $(document).ready(function () {
 
     //toolbox without text
     $("#toolbox-without-text-btn").click(function () {
-        $("#toolbox-without-text-btn span").toggleClass("briskicon briskicon-backward2").toggleClass("briskicon briskicon-forward5");
+        $("#toolbox-without-text-btn span").toggleClass("briskicon briskicon-backward").toggleClass("briskicon briskicon-forward");
         // $(".toolbox-without-text p.toolbox-text").toggle("slide");
 
         //$(".title_name").css("display","none");
