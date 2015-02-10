@@ -1,0 +1,31 @@
+.pager {
+  padding-left: @pager-padding-left;
+  margin: @pager-margin;
+  text-align: @text-center;
+  list-style: @none;
+  > li{display: inline;
+  > a, > span{
+	display: inline-block;
+	padding: @c @b*@b*@b*@b - @b;
+	background-color: @pager-bg;
+	color: @pager-color;
+	border: @pager-border-size solid @pager-border-color;
+	.rounded-corners(@pager-rounded-corners);
+	  }
+	> a{&:hover, &:focus{
+		text-decoration: @none;
+		color:@pager-hover-color;
+		background-color: @pager-hover-bg;
+		}} 
+  }
+  > .next{
+	  > a, >span{float: @right;}
+	  }
+  > .previous{
+	  > a, >span{float: @left;}
+	  }
+  > .disabled{
+	  > a, > span {color: #999; cursor: not-allowed; background-color: @bg-white;
+	  &:hover, &focus{color: #999; cursor: not-allowed; background-color: @bg-white;}}
+	  }
+}

@@ -1,0 +1,14 @@
+.breadcrumb {
+	padding: @breadcrumb-padding;
+	margin-bottom: @breadcrumb-margin-bottom;
+	list-style: @none;
+	background-color: @breadcrumb-bg;
+	.rounded-corners(@breadcrumb-rounded-corners);
+		> li {
+		display: inline-block;
+		}
+		> li + li{&:before{padding: @z @c; color:@breadcrumb-active-content-color; content: "/\00a0";}}
+		> .active{color:@breadcrumb-active-color;}
+}
+
+

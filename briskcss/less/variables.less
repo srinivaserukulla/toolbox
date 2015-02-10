@@ -1,0 +1,766 @@
+// Site Colors //
+@bg-blue: #50b9e6;
+@bg-cyan: #3eceb5;
+@bg-green: #A0D468;
+@bg-orange: #f9a542;
+@bg-red: #ff6160;
+@light-gray: #F5F7FA;
+@medium-gray: #CCD1D9;
+@dark-gray: #5e5e5e;
+@bg-white: #ffffff;
+@bg-black: darken(@bg-white, @yf+@yf);
+
+@bg-blue-active: darken(@bg-blue, @df);
+@bg-cyan-active: darken(@bg-cyan, @cf+@bf+@af);
+@bg-green-active: darken(@bg-green, @df);
+@bg-orange-active: darken(@bg-orange, @df);
+@bg-red-active: darken(@bg-red, @df);
+@light-gray-active: darken(@light-gray, @df);
+@medium-gray-active: darken(@medium-gray, @df);
+@dark-gray-active: darken(@dark-gray, @df);
+
+
+@text-blue: @bg-blue;
+@text-cyan: @bg-cyan;
+@text-green: @bg-green;
+@text-orange: @bg-orange;
+@text-red: @bg-red;
+@text-light-gray: @light-gray;
+@text-medium-gray: @medium-gray;
+@text-dark-gray: @dark-gray;
+@text-white: @bg-white;
+@text-black: @bg-black;
+
+
+@text-blue-hover: @bg-blue-active;
+@text-cyan-hover: @bg-cyan-active;
+@text-green-hover: @bg-green-active;
+@text-orange-hover: @bg-orange-active;
+@text-red-hover: @bg-red-active;
+@text-light-gray-hover: @light-gray-active;
+@text-medium-gray-hover: @medium-gray-active;
+@text-dark-gray-hover: @dark-gray-active;
+
+
+// other colors //
+@transparent: transparent;
+// grayscale colors //
+
+@gray-5: fade(@gray-10, @xf);
+@gray-10: darken(@bg-white, @df);
+@gray-20: darken(@bg-white, @xf);
+@gray-30: darken(@bg-white, @xf+@df);
+@gray-40: darken(@bg-white, @xf*@bf);
+@gray-50: darken(@bg-white, @xf*@bf+@df);
+@gray-60: darken(@bg-white, @xf*@bf+@xf);
+@gray-70: darken(@bg-white, @yf+@xf);
+@gray-80: darken(@bg-white, @xf*@bf*@bf);
+@gray-90: darken(@bg-white, @yf+@xf+@xf);
+// mark tag color //
+@mark-bg: #fcf8e3;
+
+// floating //
+@right: right;
+@left: left;
+@center: none;
+@text-right: right;
+@text-left: left;
+@text-center: center;
+@text-justify: justify;
+
+// overflow //
+@hidden: hidden;
+
+// display //
+@show: block;
+@hide: none;
+@none: none;
+@block: block;
+@inline-block: inline-block;
+
+// Position //
+@position-absolute: absolute;
+@position-fixed: fixed;
+@position-relative: relative;
+@position-static: static;
+
+
+// font and % valu variables //
+@af: 1%; //  1  //
+@bf: @af + @af; //  2  //
+@cf: @bf * @bf + @af; //  5  //
+@df: @cf * @bf; //  10 //
+@xf: @bf * @df; //  20 //
+@yf: @xf * @bf + @df; //  50 //
+
+// pixels valu variables //
+@a: 1px; //  1  //
+@b: @a + @a; //  2  //
+@c: @b * @b + @a; //  5  //
+@d: @c * @b; //  10 //
+@x: @b * @d; //  20 //
+@y: @x * @b + @d; //  50 //
+@z: 0; //  0  //
+
+// opacity and numbers valu variables //
+@an: 1; //  1  //
+@bn: @an + @an; //  2  //
+@cn: @bn * @bn + @an; //  5  //
+@dn: @cn * @bn; //  10 //
+@xn: @bn * @dn; //  20 //
+@yn: @xn * @bn + @dn; //  50 //
+
+
+// em's valu variables //
+@aem: 1em; //  1  //
+@bem: @aem + @aem; //  2  //
+@cem: @bem * @bem + @aem; //  5  //
+@dem: @cem * @bem; //  10 //
+@xem: @bem * @dem; //  20 //
+@yem: @xem * @bem + @dem; //  50 //
+
+
+// Opacity //
+@opacity1: 0.1;
+@opacity2: 0.2;
+@opacity3: 0.3;
+@opacity4: 0.4;
+@opacity5: 0.5;
+@opacity6: 0.6;
+@opacity7: 0.7;
+@opacity8: 0.8;
+@opacity9: 0.9;
+@opacity10: 1;
+
+
+//
+//## For each of briskCSS's Alerts, define padding, margin, border-size, alerts background, color and border.
+//
+@alert-padding: @d + @c;
+@alert-margin: @x;
+@alert-border-size: @a;
+
+// Blue
+@alerts-blue-color: @text-blue-hover;
+@alerts-blue-bg: lighten(@bg-blue, @xf);
+@alerts-blue-border: @bg-blue-active;
+
+// Cyan
+@alerts-cyan-color: @text-cyan-hover;
+@alerts-cyan-bg: lighten(@bg-cyan, @xf);
+@alerts-cyan-border: @bg-cyan-active;
+
+// Green
+@alerts-green-color: @text-green-hover;
+@alerts-green-bg: lighten(@bg-green, @xf);
+@alerts-green-border: @bg-green-active;
+
+// Orange
+@alerts-orange-color: @text-orange-hover;
+@alerts-orange-bg: lighten(@bg-orange, @xf);
+@alerts-orange-border: @bg-orange-active;
+
+// Red
+@alerts-red-color: @text-red-hover;
+@alerts-red-bg: lighten(@bg-red, @xf);
+@alerts-red-border: @bg-red-active;
+
+
+//
+//## For each of briskCSS's Breadcrumbs, define padding, margin, round corners, colors.
+//
+@breadcrumb-padding: @b*@b*@b @c+@d;
+@breadcrumb-margin-bottom: @x;
+@breadcrumb-bg: @gray-5;
+@breadcrumb-rounded-corners: @b*@b;
+@breadcrumb-active-color: @text-dark-gray;
+@breadcrumb-active-content: @b*@b;
+
+; @breadcrumb-active-content-color : @text-dark-gray;
+//
+//## For each of briskCSS's Pagination, define padding, margin, border-size, Rounded Corners and :hover Text color Border color and Background color.
+//
+@pagination-padding-left : @z; 
+@pagination-margin : @x @z; 
+@pagination-large-padding : 10px 16px; 
+@pagination-small-padding : 5px 10px; 
+@pagination-large-font-size : 18px; 
+@pagination-small-font-size : 12px; 
+@pagination-hover-text: @text-blue-hover; 
+@pagination-hover-bg: @gray-10; 
+@pagination-hover-border: @gray-20; 
+
+#pagination-rounded-corners {
+    .border-top-left() {
+        .rounded-corners-top-left(@radius:@b+@b;);
+    }
+
+    .border-top-left-large() {
+        .rounded-corners-top-left(@radius:@b+@b+@b;);
+    }
+
+    .border-top-left-small() {
+        .rounded-corners-top-left(@radius:@b+@a;);
+    }
+
+    .border-bottom-left() {
+        .rounded-corners-bottom-left(@radius:@b+@b;);
+    }
+
+    .border-bottom-left-large() {
+        .rounded-corners-bottom-left(@radius:@b+@b+@b;);
+    }
+
+    .border-bottom-left-small() {
+        .rounded-corners-bottom-left(@radius:@b+@a;);
+    }
+
+    .border-top-right() {
+        .rounded-corners-top-right(@radius:@b+@b;);
+    }
+
+    .border-top-right-larg() {
+        .rounded-corners-top-right(@radius:@b+@b+@b;);
+    }
+
+    .border-top-right-small() {
+        .rounded-corners-top-right(@radius:@b+@a;);
+    }
+
+    .border-bottom-right() {
+        .rounded-corners-bottom-right(@radius:@b+@b;);
+    }
+
+    .border-bottom-right-large() {
+        .rounded-corners-bottom-right(@radius:@b+@b+@b;);
+    }
+
+    .border-bottom-right-small() {
+        .rounded-corners-bottom-right(@radius:@b+@a;);
+    }
+
+    .border-rounded() {
+        .rounded-corners(@radius:@b+@b;);
+    }
+}
+
+
+//
+//## For each of briskCSS's Pager, define padding, margin, round corners, colors and font.
+//
+@pager-padding-left: @z;
+@pager-margin: @x @z;
+@pager-bg: @bg-white;
+@pager-color: @site-link-color;
+@pager-hover-bg: @gray-20;
+@pager-hover-color: @site-link-color;
+@pager-rounded-corners: @d+@c;
+@pager-border-size: @a;
+@pager-border-color: @gray-20;
+
+//
+//## For each of briskCSS's Labels, define padding, margin, round corners, colors and font.
+//
+@lable-padding: @c;
+@lable-font-weight: @text-normal;
+@lable-color: @text-white;
+@lable-rounded-corners: @b+@b;
+
+@label-gray: @gray-50;
+@label-gray-color: @text-white;
+@label-blue: @bg-blue;
+@label-blue-color: @text-white;
+@label-cyan: @bg-cyan;
+@label-cyan-color: @text-white;
+@label-green: @bg-green;
+@label-green-color: @text-white;
+@label-orange: @bg-orange;
+@label-orange-color: @text-white;
+@label-red: @bg-red;
+@label-red-color: @text-white;
+
+
+@badge-color: @text-white;
+@badge-bg: @gray-80;
+@badge-blue: @bg-blue;
+@badge-cyan: @bg-cyan;
+@badge-green: @bg-green;
+@badge-orange: @bg-orange;
+@badge-red: @bg-red;
+
+// Inner button badge
+@badge-blue-bg: darken(@bg-blue, @xf);
+@badge-blue-color: @text-white;
+
+@badge-cyan-bg: darken(@bg-cyan, @xf);
+@badge-cyan-color: @text-white;
+
+@badge-green-bg: darken(@bg-green, @xf);
+@badge-green-color: @text-white;
+
+@badge-orange-bg: darken(@bg-orange, @xf);
+@badge-orange-color: @text-white;
+
+@badge-red-bg: darken(@bg-red, @xf);
+@badge-red-color: @text-white;
+
+//
+//## For each of briskCSS's Panel, define padding, margin, round corners, colors and font.
+//
+
+@panel-margin-bottom: 20px;
+@panel-bg: @bg-white;
+@panel-border-color: @gray-20;
+@panel-border-size: 1px;
+
+@panel-body-padding: 15px;
+
+@panel-heading-bg: @gray-5;
+@panel-heading-padding: 10px 15px;
+
+@panel-footer-bg: @gray-5;
+@panel-footer-padding: 10px 15px;
+
+// panel-colors
+@panel-blue-bg: lighten(@bg-blue, @df);
+@panel-blue-border: @bg-blue-active;
+@panel-blue-color: @text-blue-hover;
+
+@panel-cyan-bg: lighten(@bg-cyan, @df);
+@panel-cyan-border: @bg-cyan-active;
+@panel-cyan-color: @text-cyan-hover;
+
+@panel-green-bg: lighten(@bg-green, @df);
+@panel-green-border: @bg-green-active;
+@panel-green-color: @text-green-hover;
+
+@panel-orange-bg: lighten(@bg-orange, @df);
+@panel-orange-border: @bg-orange-active;
+@panel-orange-color: @text-orange-hover;
+
+@panel-red-bg: lighten(@bg-red, @df);
+@panel-red-border: @bg-red-active;
+@panel-red-color: @text-red-hover;
+
+
+//
+//## For each of briskCSS's Toggle Switch, define ().
+//
+@switch-blue: @bg-blue;
+@switch-cyan: @bg-cyan;
+@switch-green: @bg-green;
+@switch-orange: @bg-orange;
+@switch-red: @bg-red;
+@switch-bg: @gray-30;
+// round colors
+@switch-round-blue: @bg-blue;
+@switch-round-cyan: @bg-cyan;
+@switch-round-green: @bg-green;
+@switch-round-orange: @bg-orange;
+@switch-round-red: @bg-red;
+@switch-round-bg: @gray-30;
+//yes-no
+@switch-yes-no-blue: @bg-blue;
+@switch-yes-no-cyan: @bg-cyan;
+@switch-yes-no-green: @bg-green;
+@switch-yes-no-orange: @bg-orange;
+@switch-yes-no-red: @bg-red;
+@switch-yes-no-bg: @gray-30;
+
+
+
+//
+//== Cursor View
+//
+@cursor-pointer: pointer;
+@cursor-help: help;
+@cursor-move: move;
+@cursor-progress: progress;
+@cursor-text: text;
+@cursor-wait: wait;
+@cursor-not-allowed: not-allowed;
+
+
+//
+//## For each of briskCSS's tables, define ().
+//
+//Striped rows
+@striped-rows: @gray-5;
+
+//Bordered table
+@dordered-table: @gray-20;
+
+//Table hover
+@table-hover-color: @gray-5;
+
+//Select row color
+@select-row-color: @gray-5;
+
+// Contextual colors
+@contextual-color-one: @bg-blue;
+@contextual-color-two: @bg-cyan;
+@contextual-color-three: @bg-green;
+@contextual-color-four: @bg-red;
+@contextual-color-five: @bg-orange;
+
+
+// Media queries breakpoints //
+
+
+//
+//== body
+//
+
+@site-color: @gray-70;
+@site-font-name: 'Open Sans', sans-serif;
+@site-font-size: @d + @b + @b;
+@site-line-height: 1.42857143;
+
+@site-link-color: @text-cyan;
+@site-link-color-hover: @text-cyan-hover;
+
+// Iconography //
+// Load fonts from this directory. //
+@icon-font-path: "../fonts/";
+// File name for all font files. //
+@icon-font-name: "briskicon";
+
+
+
+
+//== Buttons
+//
+//## For each of briskCSS's buttons, define text, background and border color.
+@btn-white: darken(@bg-white, @df);
+@btn-blue: darken(@bg-blue, @df);
+@btn-cyan: darken(@bg-cyan, @df);
+@btn-green: darken(@bg-green, @df);
+@btn-orange: darken(@bg-orange, @df);
+@btn-red: darken(@bg-red, @df);
+
+// white
+@btn-white-color: @text-black;
+@btn-white-bg: @bg-white;
+@btn-white-border: @btn-white;
+@btn-whitehover-bg: @btn-white;
+
+// Blue
+@btn-blue-color: @text-white;
+@btn-blue-bg: @bg-blue;
+@btn-blue-border: @btn-blue;
+@btn-bluehover-bg: @btn-blue;
+
+// Cyan
+@btn-cyan-color: @text-white;
+@btn-cyan-bg: @bg-cyan;
+@btn-cyan-border: @btn-cyan;
+@btn-cyanhover-bg: @btn-cyan;
+
+
+// Green
+@btn-green-color: @text-white;
+@btn-green-bg: @bg-green;
+@btn-green-border: @btn-green;
+@btn-greenhover-bg: @btn-green;
+
+// Orange
+@btn-orange-color: @text-white;
+@btn-orange-bg: @bg-orange;
+@btn-orange-border: @btn-orange;
+@btn-orangehover-bg: @btn-orange;
+
+// Red
+@btn-red-color: @text-white;
+@btn-red-bg: @bg-red;
+@btn-red-border: @btn-red;
+@btn-redhover-bg: @btn-red;
+
+// link
+@btn-link-color: @text-blue;
+@btn-link-bg: @transparent;
+@btn-link-border: @transparent;
+
+@btn-large:;
+@btn-small:;
+@btn-mini:;
+
+
+
+//== Progress styles
+//
+//## For each of briskCSS's Progress, define background.
+@progress-bar-blue: @bg-blue;
+@progress-bar-cyan: @bg-cyan;
+@progress-bar-green: @bg-green;
+@progress-bar-orange: @bg-orange;
+@progress-bar-red: @bg-red;
+@progress-bar-gray: @medium-gray;
+
+
+//
+// Callout
+//
+@callout-blue-bg: lighten(@bg-blue, @df);
+@callout-blue-border: @bg-blue-active;
+@callout-blue-color: @text-white;
+
+@callout-cyan-bg: lighten(@bg-cyan, @df);
+@callout-cyan-border: @bg-cyan-active;
+@callout-cyan-color: @text-white;
+
+@callout-green-bg: lighten(@bg-green, @df);
+@callout-green-border: @bg-green-active;
+@callout-green-color: @text-white;
+
+@callout-orange-bg: lighten(@bg-orange, @df);
+@callout-orange-border: @bg-orange-active;
+@callout-orange-color: @text-white;
+
+@callout-red-bg: lighten(@bg-red, @df);
+@callout-red-border: @bg-red-active;
+@callout-red-color: @text-white;
+
+
+
+//
+//== Text styles
+//
+@underline: underline;
+@text-daring: bold;
+@text-normal: normal;
+@x-large: x-large;
+@xx-large: xx-large;
+@x-small: x-small;
+@xx-small: xx-small;
+
+
+//
+//== line-height
+//
+@line-height-small: @d;
+@line-height-normal: @x;
+@line-height-large: @y;
+@line-height-x-large: @y + @y;
+
+
+
+//
+//== Fixed Height
+//
+@fixed-height-small: @d;
+@fixed-height-normal: @x;
+@fixed-height-large: @y;
+@fixed-height-x-large: @y + @y;
+@fixed-height-xx-large: (@y + @y) * @b;
+@fixed-height-xxx-large: (@y + @y) * @c;
+
+//
+//== Min-height
+//
+@min-height-small: @d;
+@min-height-normal: @x;
+@min-height-large: @y;
+@min-height-x-large: @y + @y;
+@min-height-xx-large: (@y + @y) * @b;
+@min-height-xxx-large: (@y + @y) * @c;
+
+
+//
+//==  For each of briskCSS's Button Group styles, define Rounded Corners.
+//
+@btn-group-rounded-corners: @z;
+@btn-group-fist-last-rounded-corners: @c;
+
+//
+//== Mixins
+//
+
+
+// Margin
+.m(@margin: @z) {
+    margin: @margin !important;
+}
+
+.m-top(@margin-top: @z) {
+    margin-top: @margin-top !important;
+}
+
+.m-bottom(@margin-bottom: @z) {
+    margin-bottom: @margin-bottom !important;
+}
+
+.m-left(@margin-left: @z) {
+    margin-left: @margin-left !important;
+}
+
+.m-right(@margin-right: @z) {
+    margin-right: @margin-right !important;
+}
+
+
+// Padding
+.p(@padding: @z) {
+    padding: @padding !important;
+}
+
+.p-top(@padding-top: @z) {
+    padding-top: @padding-top !important;
+}
+
+.p-bottom(@padding-bottom: @z) {
+    padding-bottom: @padding-bottom !important;
+}
+
+.p-left(@padding-left: @z) {
+    padding-left: @padding-left !important;
+}
+
+.p-right(@padding-right: @z) {
+    padding-right: @padding-right !important;
+}
+
+
+// browser text selection
+
+#selection {
+    .selection-blue() {
+        color: @text-white;
+        background-color: @bg-blue;
+    }
+
+    .selection-cyan() {
+        color: @text-white;
+        background-color: @bg-cyan;
+    }
+
+    .selection-green() {
+        color: @text-white;
+        background-color: @bg-green;
+    }
+
+    .selection-orange() {
+        color: @text-white;
+        background-color: @bg-orange;
+    }
+
+    .selection-red() {
+        color: @text-white;
+        background-color: @bg-red;
+    }
+
+    .selection-gray() {
+        color: @text-white;
+        background-color: @dark-gray;
+    }
+}
+
+
+// transition
+.transition (@transition: background 0s) {
+    -webkit-transition: @transition;
+    -moz-transition: @transition;
+    -o-transition: @transition;
+    transition: @transition;
+}
+
+// Transform
+
+.transform (@transform: rotate(90deg)) {
+    -webkit-transform: @transform;
+    -moz-transform: @transform;
+    -ms-transform: @transform;
+    -o-transform: @transform;
+    transform: @transform;
+}
+
+// Rounded Corners Top Right Bottom Left
+.rounded-corners (@radius: @c) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    -ms-border-radius: @radius;
+    -o-border-radius: @radius;
+    border-radius: @radius;
+}
+
+// Rounded Corners Top Left
+.rounded-corners-top-left (@radius: @c) {
+    -webkit-border-top-left-radius: @radius;
+    -moz-border-radius-topleft: @radius;
+    border-top-left-radius: @radius;
+}
+
+// Rounded Corners Bottom Left
+.rounded-corners-bottom-left (@radius: @c) {
+    -webkit-border-bottom-left-radius: @radius;
+    -moz-border-radius-bottomleft: @radius;
+    border-bottom-left-radius: @radius;
+}
+
+// Rounded Corners Top Right
+.rounded-corners-top-right (@radius: @c) {
+    -webkit-border-top-right-radius: @radius;
+    -moz-border-radius-topright: @radius;
+    border-top-right-radius: @radius;
+}
+
+// Rounded Corners Bottom Right
+.rounded-corners-bottom-right (@radius: @c) {
+    -webkit-border-bottom-right-radius: @radius;
+    -moz-border-radius-bottomright: @radius;
+    border-bottom-right-radius: @radius;
+}
+
+//
+// Column
+//
+.column (@column: @b) {
+    column-count: @column;
+    -webkit-column-count: @column;
+    -moz-column-count: @column;
+}
+
+.column-gap-more (@colcolumn-gap: @b) {
+    -webkit-column-gap: @colcolumn-gap;
+    -moz-column-gap: @colcolumn-gap;
+    column-gap: @colcolumn-gap;
+}
+
+.column-gap-more (@colcolumn-gap: @b) {
+    -webkit-column-gap: @colcolumn-gap;
+    -moz-column-gap: @colcolumn-gap;
+    column-gap: @colcolumn-gap;
+}
+
+
+.box-shadow(@box_shadow: inset @z @z @z rgba(@z, @z, @z, @an/10);) {
+    -ms-box-shadow: @box_shadow;
+    -moz-box-shadow: @box_shadow;
+    -webkit-box-shadow: @box_shadow;
+    box-shadow: @box_shadow;
+}
+
+.box-shadow-outside(@box-shadow-outside: @z @z @z rgba(@z, @z,@z, @z/55);) {
+    -ms-box-shadow: @box-shadow-outside;
+    -moz-box-shadow: @box-shadow-outside;
+    -webkit-box-shadow: @box-shadow-outside;
+    box-shadow: @box-shadow-outside;
+}
+
+.form-box-shadow(@form_box_shadow: inset 0 @a @a rgba(0,0,0,.075);) {
+    -ms-box-shadow: @form_box_shadow;
+    -moz-box-shadow: @form_box_shadow;
+    -webkit-box-shadow: @form_box_shadow;
+    box-shadow: @form_box_shadow;
+}
+
+.form-focused-show(@focuse_show: @z @z @c @a rgba(62,206,181,0.43);) {
+    -ms-box-shadow: @focuse_show;
+    -moz-box-shadow: @focuse_show;
+    -webkit-box-shadow: @focuse_show;
+    box-shadow: @focuse_show;
+}
+
+.alert-appearance(@alert_appearance: none;) {
+    -webkit-appearance: @alert_appearance;
+    -moz-appearance: @alert_appearance;
+}

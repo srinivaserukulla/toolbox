@@ -1,0 +1,193 @@
+table {
+    background-color: @transparent;
+    border-spacing: @z;
+    border-collapse: collapse;
+    border-color: @bg-blue-active;
+}
+
+.table-fixed {
+    table-layout: fixed;
+}
+
+.table-auto {
+    table-layout: auto;
+}
+
+th {
+    text-align: @text-left;
+}
+
+.table {
+    width: @yf + @yf;
+    max-width: @yf + @yf;
+
+    > caption + thead, > colgroup + thead, > thead:first-child {
+        > tr:first-child {
+            > td {
+                border-top: @z;
+            }
+        }
+    }
+
+    > caption + thead, > colgroup + thead, > thead:first-child {
+        > tr:first-child {
+            > th {
+                border-top: @z;
+            }
+        }
+    }
+
+    > thead {
+        > tr {
+            > th {
+                vertical-align: bottom;
+                border-bottom: @b solid @gray-20;
+            }
+        }
+    }
+
+    > thead, > tbody, > tfoot {
+        > tr {
+            > th, > td {
+                padding: @d - @b;
+                line-height: 1.42857143;
+                vertical-align: top;
+                border-top: @a solid @gray-20;
+            }
+        }
+    }
+}
+
+/** Striped rows **/
+.table-striped {
+    > tbody {
+        > tr:nth-child(odd) {
+            > td, > th {
+                background-color: @striped-rows;
+            }
+        }
+    }
+}
+
+/** Bordered table **/
+.table-bordered {
+    border: @a solid @dordered-table;
+
+    > thead, > tbody, > tfoot {
+        tr {
+            th {
+                border: @a solid @dordered-table;
+            }
+        }
+    }
+
+    > thead, > tbody, > tfoot {
+        tr {
+            td {
+                border-bottom-width: @b;
+            }
+        }
+    }
+
+    > thead {
+        > tr {
+            > th, > td {
+                border-bottom-width: @b;
+            }
+        }
+    }
+}
+
+/** Hover rows **/
+.table-hover {
+    > tbody {
+        > tr {
+            &:hover {
+                > td, > th {
+                    background: @table-hover-color;
+                }
+            }
+        }
+    }
+}
+
+table {
+    col[class*="col-"] {
+        position: static;
+        display: table-column;
+        float: @none;
+    }
+
+    td[class*="col-"], th[class*="col-"] {
+        position: static;
+        display: table-column;
+        float: @none;
+    }
+}
+
+
+/** Contextual classes **/
+.table {
+    thead, tbody, tfoot {
+        tr {
+            td, th {
+                &.colorone {
+                    background-color: @contextual-color-one;
+                }
+
+                &.colortwo {
+                    background-color: @contextual-color-two;
+                }
+
+                &.colorthree {
+                    background-color: @contextual-color-three;
+                }
+
+                &.colorfour {
+                    background-color: @contextual-color-four;
+                }
+
+                &.colorfive {
+                    background-color: @contextual-color-five;
+                }
+            }
+
+            &.colorone {
+                td, th {
+                    background-color: @contextual-color-one;
+                }
+            }
+
+            &.colortwo {
+                td, th {
+                    background-color: @contextual-color-two;
+                }
+            }
+
+            &.colorthree {
+                td, th {
+                    background-color: @contextual-color-three;
+                }
+            }
+
+            &.colorfour {
+                td, th {
+                    background-color: @contextual-color-four;
+                }
+            }
+
+            &.colorfive {
+                td, th {
+                    background-color: @contextual-color-five;
+                }
+            }
+        }
+    }
+}
+
+
+
+/** select rows **/
+.selectrow {
+    background-color: @select-row-color;
+}

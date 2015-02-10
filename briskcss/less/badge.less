@@ -1,0 +1,87 @@
+.badge {
+  display: inline-block;
+  min-width: @d;
+  padding: @b+@a @c+@b;
+  margin-left: @b+@d;
+  font-size: @d+@b;
+  font-weight: bold;
+  line-height: 1;
+  color: @badge-color;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  background-color: @badge-bg;
+  .rounded-corners(@d);
+  &:empty{display: @none;}
+}
+
+.btn{
+	> .badge{
+		position: relative;
+		top: -@a;
+	}
+}
+	
+.badge-blue{
+    background:@badge-blue-bg;
+}
+.badge-cyan{
+    background:@badge-cyan-bg;
+}
+.badge-green{
+    background:@badge-green-bg;
+}
+.badge-orange{
+    background:@badge-orange-bg;
+}
+.badge-red{
+    background:@badge-red-bg;
+}
+	
+.btn-blue{
+	> .badge{
+		background:@badge-blue-bg;
+	}
+} 
+.btn-cyan{
+	> .badge{
+		background:@badge-cyan-bg;
+	}
+} 
+.btn-green{
+	.badge{
+		background:@badge-green-bg;
+	}
+} 
+.btn-orange{
+	> .badge{
+		background:@badge-orange-bg;
+	}
+} 
+.btn-red{
+	> .badge{
+		background:@badge-red-bg;
+	}
+} 
+	
+
+.btn-large{
+	> .badge{
+		top:-@b;
+		padding: @b*@b+@b @d;
+	}
+}
+.btn-small{
+	> .badge{
+		top:@z;
+		padding: @b+@a @c+@b;
+	}
+}
+.btn-mini{
+	> .badge{
+		top:@z;
+		padding: @b @c+@a;
+		font-size: @xx-small;
+	}
+}
+
