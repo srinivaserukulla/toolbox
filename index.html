@@ -7,12 +7,12 @@
     <title>ToolBox | BriskCSS</title>
 
     <!-- BriskCSS -->
-    <link href="briskcss/style.css" rel="stylesheet" type="text/css">
-    <link href="briskcss/briskcss.css" rel="stylesheet" type="text/css">
+    <link href="briskcss/css/briskcss.css" rel="stylesheet" type="text/css">
+    <link href="briskcss/css/style.css" rel="stylesheet" type="text/css">
 
 
     <!-- // -->
-    <link href="styles/style.min.css" rel="stylesheet" type="text/css">
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script src="js/toolbox.min.js"></script>
@@ -22,13 +22,16 @@
 </head>
 
 <body>
+<a href="https://github.com/srinivaserukulla/toolbox"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub"></a>
+
     <div class="grid">
         <header class="text-center col-dt-8 center margin-bottom40">
             <h1>ToolBox</h1>
             <p>A jQuery plugin that creates Application style ToolBox.</p>
             <ul class="list-inline margin-top40 margin-bottom40">
                 <li>
-                    <iframe class="twitter-share-button" allowtransparency="true" frameborder="0" scrolling="no" src="https://platform.twitter.com/widgets/tweet_button.html?size=m&amp;text=Toolbar.js: Modern tooltip style toolbar plugin for jQuery&amp;url=http://paulkinzett.github.com/toolbar&amp;hashtags=jquery%2Cjavascript&amp;via=paul_kinzett" style="width:110px; height:20px;"></iframe>
+                    <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://srinivaserukulla.github.io/briskicon/" data-text="Brisk Icon" data-via="srinivascinu">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
                 </li>
                 <li>
            <!-- Place this tag where you want the button to render. -->
@@ -46,8 +49,9 @@
         </header>
         <!-- # -->
         <section class="col-dt-8 text-center center">
-            <p>Notepad is a handy app when you want to view or make simple edits to text files (usually with a .txt extension). If you'd like to do something more advanced—use font colors, insert pictures, or type in other languages—you might want to use WordPad. </p>
-            <div><a href="https://github.com/srinivaserukulla/toolbox/" class="btn btn-white btn-large margin20">Download <span class="briskicon briskicon-download2 margin-left10 margin-right10"></span></a></div>
+            <p class="hide">Notepad is a handy app when you want to view or make simple edits to text files (usually with a .txt extension). If you'd like to do something more advanced—use font colors, insert pictures, or type in other languages—you might want to use WordPad. </p>
+            <div class="clearfix"></div>
+            <div class="m-20"><a href="https://github.com/srinivaserukulla/toolbox/" class="btn btn-white btn-large margin20">Download <span class="briskicon briskicon-upload briskicon-flip-vertical briskicon-s m-left-10 m-right-10"></span></a></div>
         </section>
         <!-- # -->
         <section class="col-dt-8 center margin-top40">
@@ -69,7 +73,7 @@
 				<div class="toolbox">
                 <div class="title">
                     <div class="title_btn">
-                        <button id="toolbox-close-btn"><span class="briskicon briskicon-backward2"></span></button>
+                        <button id="toolbox-close-btn"><span class="briskicon briskicon-backward"></span></button>
                     </div>
                     <div class="title_name">Tools</div>
                 </div>
@@ -77,55 +81,55 @@
                 <div class="toolbox_menu">
                     <ul>
                         <li title="Calender" tooltip-blue="left">
-                            <span class="briskicon briskicon-mail7"></span>
+                            <span class="briskicon briskicon-inbox"></span>
                             <p>Email</p>
                         </li>
                         <li>
-                            <span class="briskicon briskicon-calendar5"></span>
+                            <span class="briskicon briskicon-calendar"></span>
                             <p>Date</p>
                         </li>
                         <li>
-                            <span class="briskicon briskicon-list10"></span>
+                            <span class="briskicon briskicon-list-ul"></span>
                             <p>Drop Down</p>
                         </li>
                         <li>
-                            <span class="briskicon briskicon-folder-check"></span>
+                            <span class="briskicon briskicon-list-alt"></span>
                             <p>Multi Select</p>
                         </li>
                         <li>
-                            <span class="briskicon briskicon-number"></span>
+                            <span class="briskicon briskicon-sort-numeric-asc"></span>
                             <p>Number</p>
                         </li>
                         <li>
-                            <span class="briskicon briskicon-ampersand"></span>
+                            <span class="briskicon briskicon-th"></span>
                             <p>Percent</p>
                         </li>
                         <li>
-                            <span class="briskicon briskicon-link2"></span>
+                            <span class="briskicon briskicon-link"></span>
                             <p>Url</p>
                         </li>
                         <li>
-                            <span class="briskicon briskicon-zoomin"></span>
+                            <span class="briskicon briskicon-plus-square"></span>
                             <p>Lookup</p>
                         </li>
                         <li>
-                            <span class="briskicon briskicon-list3"></span>
+                            <span class="briskicon briskicon-list"></span>
                             <p>SubForm</p>
                         </li>
                         <li>
-                            <span class="briskicon briskicon-gauge"></span>
+                            <span class="briskicon briskicon-star"></span>
                             <p>Auto Number</p>
                         </li>
                         <li>
-                            <span class="briskicon briskicon-user11"></span>
+                            <span class="briskicon briskicon-users"></span>
                             <p>Users</p>
                         </li>
                         <li>
-                            <span class="briskicon briskicon-help"></span>
+                            <span class="briskicon briskicon-warning"></span>
                             <p>Help</p>
                         </li>
                         <li>
-                            <span class="briskicon briskicon-help"></span>
+                            <span class="briskicon briskicon-minus"></span>
                             <p>Single Line</p>
                         </li>
                         <li>
@@ -137,7 +141,7 @@
                             <p>Rich Text</p>
                         </li>
                         <li>
-                            <span class="briskicon briskicon-timer"></span>
+                            <span class="briskicon briskicon-calendar-o"></span>
                             <p>Date-Time</p>
                         </li>
                     </ul>
@@ -145,23 +149,23 @@
                 <div class="toolbox_menu">
                     <ul>
                         <li>
-                            <span class="briskicon briskicon-checkbox-checked"></span>
+                            <span class="briskicon briskicon-check-square-o"></span>
                             <p>Checkbox</p>
                         </li>
                         <li>
-                            <span class="briskicon briskicon-moneybag"></span>
+                            <span class="briskicon briskicon-dollar"></span>
                             <p>Currency</p>
                         </li>
                         <li>
-                            <span class="briskicon briskicon-picture2"></span>
+                            <span class="briskicon briskicon-file-image-o"></span>
                             <p>Image</p>
                         </li>
                         <li>
-                            <span class="briskicon briskicon-upload2"></span>
+                            <span class="briskicon briskicon-upload"></span>
                             <p>File upload</p>
                         </li>
                         <li>
-                            <span class="briskicon briskicon-notebook2"></span>
+                            <span class="briskicon briskicon-book"></span>
                             <p>Add Notes</p>
                         </li>
                         <li>
@@ -169,11 +173,11 @@
                             <p>Signature</p>
                         </li>
                         <li>
-                            <span class="briskicon briskicon-radio-checked"></span>
+                            <span class="briskicon briskicon-dot-circle-o"></span>
                             <p>Radio</p>
                         </li>
                         <li>
-                            <span class="briskicon briskicon-picture"></span>
+                            <span class="briskicon briskicon-image"></span>
                             <p>Image</p>
                         </li>
                         <li>
@@ -189,7 +193,7 @@
                             <p>File upload</p>
                         </li>
                         <li>
-                            <span class="briskicon briskicon-picture"></span>
+                            <span class="briskicon briskicon-image"></span>
                             <p>Image</p>
                         </li>
                         <li>
@@ -217,7 +221,7 @@
 				<span>JS</span>
             	<div id="html">
 					<pre><code><span class="tag">$(</span><span class="atv">"#toolbox-close-btn"</span><span class="tag">)</span><span class="atn">.click</span><span class="tag">(</span><span class="atv">function</span> <span class="tag">() {</span>
-	<span class="tag">$(</span><span class="atv">"#toolbox-close-btn span"</span><span class="tag">)</span><span class="atn">.toggleClass</span><span class="tag">(</span><span class="atv">"briskicon briskicon-backward2"</span><span class="tag">)</span><span class="atn">.toggleClass</span><span class="tag">(</span><span class="atv">"briskicon briskicon-forward5"</span><span class="tag">);</span>
+	<span class="tag">$(</span><span class="atv">"#toolbox-close-btn span"</span><span class="tag">)</span><span class="atn">.toggleClass</span><span class="tag">(</span><span class="atv">"briskicon briskicon-backward"</span><span class="tag">)</span><span class="atn">.toggleClass</span><span class="tag">(</span><span class="atv">"briskicon briskicon-forward5"</span><span class="tag">);</span>
 	<span class="tag">$(</span><span class="atv">".toolbox p"</span><span class="tag">)</span><span class="atn">.toggle</span><span class="tag">(</span><span class="atv">"slide"</span><span class="tag">);</span>
 	<span class="tag">$(</span><span class="atv">'.toolbox li'</span><span class="tag">)</span><span class="atn">.removeClass</span><span class="tag">(</span><span class="atv">'active'</span><span class="tag">);</span>
 <span class="tag">});</span>
@@ -237,7 +241,7 @@
             <div class="toolbox-line">
                 <div class="title">
                     <div class="title_btn">
-                        <button id="toolbox-line-btn"><span class="briskicon briskicon-backward2"></span></button>
+                        <button id="toolbox-line-btn"><span class="briskicon briskicon-backward"></span></button>
                     </div>
                     <div class="title_name">Tools Box</div>
                 </div>
@@ -257,7 +261,7 @@
                             <p class="toolbox-text">File upload</p>
                         </li>
                         <li>
-                            <span class="briskicon briskicon-picture"></span>
+                            <span class="briskicon briskicon-image"></span>
                             <p class="toolbox-text">Image</p>
                         </li>
                         <li>
@@ -309,7 +313,7 @@
                             <p class="toolbox-text">File upload</p>
                         </li>
                         <li>
-                            <span class="briskicon briskicon-picture"></span>
+                            <span class="briskicon briskicon-image"></span>
                             <p class="toolbox-text">Image</p>
                         </li>
                    </ul>
@@ -321,7 +325,7 @@
 				<span>JS</span>
             	<div id="html">
 			    <pre><code><span class="tag">$(</span><span class="atv">"#toolbox-close-btn"</span><span class="tag">)</span><span class="atn">.click</span><span class="tag">(</span><span class="atv">function</span> <span class="tag">() {</span>
-	<span class="tag">$(</span><span class="atv">"#toolbox-close-btn span"</span><span class="tag">)</span><span class="atn">.toggleClass</span><span class="tag">(</span><span class="atv">"briskicon briskicon-backward2"</span><span class="tag">)</span><span class="atn">.toggleClass</span><span class="tag">(</span><span class="atv">"briskicon briskicon-forward5"</span><span class="tag">);</span>
+	<span class="tag">$(</span><span class="atv">"#toolbox-close-btn span"</span><span class="tag">)</span><span class="atn">.toggleClass</span><span class="tag">(</span><span class="atv">"briskicon briskicon-backward"</span><span class="tag">)</span><span class="atn">.toggleClass</span><span class="tag">(</span><span class="atv">"briskicon briskicon-forward5"</span><span class="tag">);</span>
 	<span class="tag">$(</span><span class="atv">".toolbox p"</span><span class="tag">)</span><span class="atn">.toggle</span><span class="tag">(</span><span class="atv">"slide"</span><span class="tag">);</span>
 	<span class="tag">$(</span><span class="atv">'.toolbox li'</span><span class="tag">)</span><span class="atn">.toggleClass</span><span class="tag">(</span><span class="atv">'hide'</span><span class="tag">);</span>
 <span class="tag">});</span>
@@ -341,7 +345,7 @@
 				<div class="toolbox-without-text">
                 <div class="title">
                     <div class="title_btn">
-                        <button id="toolbox-without-text-btn"><span class="briskicon briskicon-backward2"></span></button>
+                        <button id="toolbox-without-text-btn"><span class="briskicon briskicon-backward"></span></button>
                     </div>
                     <div class="title_name">Tools</div>
                 </div>
@@ -361,7 +365,7 @@
                             <p class="toolbox-text">File upload</p>
                         </li>
                         <li>
-                            <span class="briskicon briskicon-picture"></span>
+                            <span class="briskicon briskicon-image"></span>
                             <p class="toolbox-text">Image</p>
                         </li>
                         <li>
@@ -413,7 +417,7 @@
                             <p class="toolbox-text">File upload</p>
                         </li>
                         <li>
-                            <span class="briskicon briskicon-picture"></span>
+                            <span class="briskicon briskicon-image"></span>
                             <p class="toolbox-text">Image</p>
                         </li>
                    </ul>
@@ -425,7 +429,7 @@
 				<span>JS</span>
             	<div id="html">
 					<pre><code><span class="tag">$(</span><span class="atv">"#toolbox-close-btn"</span><span class="tag">)</span><span class="atn">.click</span><span class="tag">(</span><span class="atv">function</span> <span class="tag">() {</span>
-	<span class="tag">$(</span><span class="atv">"#toolbox-close-btn span"</span><span class="tag">)</span><span class="atn">.toggleClass</span><span class="tag">(</span><span class="atv">"briskicon briskicon-backward2"</span><span class="tag">)</span><span class="atn">.toggleClass</span><span class="tag">(</span><span class="atv">"briskicon briskicon-forward5"</span><span class="tag">);</span>
+	<span class="tag">$(</span><span class="atv">"#toolbox-close-btn span"</span><span class="tag">)</span><span class="atn">.toggleClass</span><span class="tag">(</span><span class="atv">"briskicon briskicon-backward"</span><span class="tag">)</span><span class="atn">.toggleClass</span><span class="tag">(</span><span class="atv">"briskicon briskicon-forward5"</span><span class="tag">);</span>
 	<span class="tag">$(</span><span class="atv">".toolbox p"</span><span class="tag">)</span><span class="atn">.toggle</span><span class="tag">(</span><span class="atv">"slide"</span><span class="tag">);</span>
 	<span class="tag">$(</span><span class="atv">'.toolbox li'</span><span class="tag">)</span><span class="atn">.removeClass</span><span class="tag">(</span><span class="atv">'active'</span><span class="tag">);</span>
 <span class="tag">});</span>
@@ -446,7 +450,7 @@
                 <div id="toolbox-blue">
                 <div class="title">
                     <div class="title_btn">
-                        <button id="toolbox-color-btn"><span class="briskicon briskicon-backward2"></span></button>
+                        <button id="toolbox-color-btn"><span class="briskicon briskicon-backward"></span></button>
                     </div>
                     <div class="title_name">Tools</div>
                 </div>
@@ -482,7 +486,7 @@
                 <div id="toolbox-cyan">
                 <div class="title">
                     <div class="title_btn">
-                        <button id="toolbox-color-btn"><span class="briskicon briskicon-backward2"></span></button>
+                        <button id="toolbox-color-btn"><span class="briskicon briskicon-backward"></span></button>
                     </div>
                     <div class="title_name">Tools</div>
                 </div>
@@ -518,7 +522,7 @@
             	<div id="toolbox-green">
                 <div class="title">
                     <div class="title_btn">
-                        <button id="toolbox-color-btn"><span class="briskicon briskicon-backward2"></span></button>
+                        <button id="toolbox-color-btn"><span class="briskicon briskicon-backward"></span></button>
                     </div>
                     <div class="title_name">Tools</div>
                 </div>
@@ -554,7 +558,7 @@
                 <div id="toolbox-orange">
                 <div class="title">
                     <div class="title_btn">
-                        <button id="toolbox-color-btn"><span class="briskicon briskicon-backward2"></span></button>
+                        <button id="toolbox-color-btn"><span class="briskicon briskicon-backward"></span></button>
                     </div>
                     <div class="title_name">Tools</div>
                 </div>
@@ -590,7 +594,7 @@
                 <div id="toolbox-red">
                 <div class="title">
                     <div class="title_btn">
-                        <button id="toolbox-color-btn"><span class="briskicon briskicon-backward2"></span></button>
+                        <button id="toolbox-color-btn"><span class="briskicon briskicon-backward"></span></button>
                     </div>
                     <div class="title_name">Tools</div>
                 </div>
