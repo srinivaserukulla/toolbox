@@ -1,0 +1,78 @@
+.scrollbar{overflow:scroll;}
+
+.scrollbar-y{overflow-y:scroll !important; overflow-x:hidden !important;}
+
+.scrollbar-x{overflow-y:hidden !important; overflow-x:scroll !important;}
+
+.scrollbar-y, scrollbar-x{
+	background: #f5f5f5;
+}
+
+/* Colors */
+// blue
+.scrollbar-blue::-webkit-scrollbar-thumb
+{
+	background-color: @bg-blue !important;
+}
+// cyan
+.scrollbar-cyan::-webkit-scrollbar-thumb
+{
+	background-color: @bg-cyan !important;
+}
+// Green
+.scrollbar-green::-webkit-scrollbar-thumb
+{
+	background-color: @bg-green !important;
+}
+// orange
+.scrollbar-orange::-webkit-scrollbar-thumb
+{
+	background-color: @bg-orange !important;
+}
+// red
+.scrollbar-red::-webkit-scrollbar-thumb
+{
+	background-color: @bg-red !important;
+}
+
+
+
+// solid
+.scrollbar::-webkit-scrollbar-track{
+	background-color: @gray-5;
+}
+.scrollbar::-webkit-scrollbar
+{
+	width: @d;
+	background-color:transparent;
+}
+.scrollbar::-webkit-scrollbar-thumb
+{
+	background-color: @dark-gray;
+}
+
+
+// stripes 
+.scrollbar-stripes::-webkit-scrollbar-track
+{
+	background-color: @gray-5;
+}
+.scrollbar-stripes::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: transparent;
+}
+.scrollbar-stripes::-webkit-scrollbar-thumb
+{
+	background-color: @dark-gray;	
+	background-image: -webkit-linear-gradient(45deg,
+	                                          rgba(255, 255, 255, .2) 25%,
+											  transparent 25%,
+											  transparent 50%,
+											  rgba(255, 255, 255, .2) 50%,
+											  rgba(255, 255, 255, .2) 75%,
+											  transparent 75%,
+											  transparent)
+}
+
+

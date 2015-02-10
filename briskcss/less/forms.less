@@ -1,0 +1,326 @@
+input, button, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    outline: none;
+}
+/* Basic example */
+.bc-form-row {
+    margin-bottom: @d + @c;
+}
+
+label {
+    display: inline-block;
+    max-width: @yf * @bf;
+    margin-bottom: @c;
+    font-weight: 700;
+}
+
+.bc-form-control {
+    display: @block;
+    width: @yf * @bf;
+    height: @x + @d + @b * @b;
+    padding: @c + @a @d + @b;
+    font-size: @d + @c - @a;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: @bg-white;
+    background-image: @none;
+    border: @a solid @medium-gray;
+    .form-box-shadow;
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+
+    &:focus {
+        outline: 0;
+        border-color: @bg-cyan;
+        .form-focused-show;
+    }
+}
+
+
+/* Inline form */
+.input-group {
+    position: relative;
+    display: table;
+    border-collapse: separate;
+}
+
+.input-group-addon:first-child {
+    border-right: 0;
+}
+
+.input-group-addon {
+    padding: @c + @a @d + @b;
+    font-size: (@b * @b * @b) + (@b * @b) + @b;
+    font-weight: 400;
+    line-height: 1;
+    color: @dark-gray;
+    text-align: @text-center;
+    background-color: @light-gray;
+    border: @a solid @medium-gray;
+}
+
+.input-group-addon, .input-group-btn {
+    width: @af;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+
+.input-group-addon, .input-group-btn, .input-group .form-control {
+    display: table-cell;
+}
+
+@media (min-width: 768px) {
+    .form-inline .bc-form-row {
+        display: inline-block;
+        margin-bottom: @z;
+        vertical-align: middle;
+    }
+
+    .form-inline .bc-form-control {
+        display: inline-block;
+        width: auto;
+        vertical-align: middle;
+    }
+
+    .form-inline .input-group {
+        display: inline-table;
+        vertical-align: middle;
+    }
+
+    .form-inline .input-group .input-group-addon, .form-inline .input-group .input-group-btn, .form-inline .input-group .form-control {
+        width: auto;
+    }
+
+    .form-inline .radio, .form-inline .checkbox {
+        display: inline-block;
+        margin-top: @z;
+        margin-bottom: @z;
+        vertical-align: middle;
+    }
+}
+
+.sr-only {
+    position: absolute;
+    width: @a;
+    height: @a;
+    padding: @z;
+    margin: -@a;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: @z;
+}
+/* Horizontal form */
+.form-horizontal .bc-form-row {
+    margin-right: -@x + @c;
+    margin-left: -@x + @c;
+    clear: both;
+}
+
+@media (min-width: 768px) {
+    .form-horizontal .control-label {
+        padding-top: @c + @b;
+        margin-bottom: @z;
+        text-align: @text-right;
+    }
+}
+
+textarea.bc-form-control {
+    height: auto;
+}
+/* Checkboxes and radios */
+.radio label, .checkbox label {
+    min-height: @x;
+    padding-left: @x;
+    margin-bottom: @z;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.radio, .checkbox {
+    position: relative;
+    display: @block;
+    margin-top: @d;
+    margin-bottom: @d;
+}
+
+.radio + .radio, .checkbox + .checkbox {
+    margin-top: -@c;
+}
+
+.radio input[type=radio], .radio-inline input[type=radio], .checkbox input[type=checkbox], .checkbox-inline input[type=checkbox] {
+    position: absolute;
+    margin-top: 4px \9;
+    margin-left: -20px;
+}
+
+input[type=radio], input[type=checkbox] {
+    margin: @c - @a 0 0;
+    margin-top: 1px \9;
+    line-height: normal;
+}
+
+input[type=checkbox], input[type=radio] {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: @z;
+}
+/** Inline checkboxes and radios **/
+.radio-inline, .checkbox-inline {
+    display: inline-block;
+    padding-left: @x;
+    margin-bottom: @x;
+    font-weight: 400;
+    vertical-align: middle;
+    cursor: pointer;
+}
+/** disabled **/
+.bc-form-control[disabled], .bc-form-control[readonly], fieldset[disabled] .bc-form-control {
+    cursor: not-allowed;
+    background-color: @light-gray;
+    opacity: 1;
+}
+
+button[disabled], html input[disabled] {
+    cursor: default;
+}
+/* select */
+select[multiple], select[size] {
+    height: auto;
+}
+/* file input */
+.help-block {
+    display: block;
+    margin-top: @z;
+    margin-bottom: @d;
+    color: @text-dark-gray;
+}
+
+input[type=file] {
+    display: @block;
+}
+/* focuse */
+#focusedInput {
+    border-color: @bg-cyan;
+    outline: @z;
+    outline: thin dotted \9;
+    .form-focused-show;
+}
+/* fieldset */
+fieldset {
+    min-width: @z;
+    padding: @z;
+    margin: @z;
+    border: @z;
+}
+/** Validation states **/
+.success .help-block, .success .control-label, .success .radio, .success .checkbox, .success .radio-inline, .success .checkbox-inline, .success.radio label, .success.checkbox label, .success.radio-inline label, .success.checkbox-inline label {
+    color: @bg-blue;
+}
+
+.success .bc-form-control {
+    border-color: @bg-blue;
+    -webkit-box-shadow: inset @z @a @a rgba(@z,@z,@z,.075);
+    box-shadow: inset @z @a @a rgba(@z,@z,@z,.075);
+}
+
+.warning .help-block, .warning .control-label, .warning .radio, .warning .checkbox, .warning .radio-inline, .warning .checkbox-inline, .warning.radio label, .warning.checkbox label, .warning.radio-inline label, .warning.checkbox-inline label {
+    color: @bg-orange;
+}
+
+.warning .bc-form-control {
+    border-color: @bg-orange;
+    -webkit-box-shadow: inset @z @a @a rgba(@z,@z,@z,.075);
+    box-shadow: inset @z @a @a rgba(@z,@z,@z,.075);
+}
+
+.error .help-block, .error .control-label, .error .radio, .error .checkbox, .error .radio-inline, .error .checkbox-inline, .error.radio label, .error.checkbox label, .error.radio-inline label, .error.checkbox-inline label {
+    color: @bg-red;
+}
+
+.error .bc-form-control {
+    border-color: @bg-red;
+    -webkit-box-shadow: inset @z @a @a rgba(@z,@z,@z,.075);
+    box-shadow: inset @z @a @a rgba(@z,@z,@z,.075);
+}
+
+/*=== With optional icons */
+.feedback {
+    position: relative;
+}
+
+.feedback span {
+    font-size: @x - @b;
+}
+
+.feedback label ~ .bc-form-control-feedback {
+    top: @x + @d;
+}
+
+.success .bc-form-control-feedback {
+    color: @text-blue;
+}
+
+.warning .bc-form-control-feedback {
+    color: @text-orange;
+}
+
+.error .bc-form-control-feedback {
+    color: @text-red;
+}
+
+.form-horizontal .feedback .bc-form-control-feedback {
+    right: @x - @c;
+    top: @c;
+}
+
+.bc-form-control-feedback {
+    position: absolute;
+    top: @z;
+    right: @z;
+    z-index: 2;
+    display: @block;
+    width: @x + @d + @b * @b;
+    height: @x + @d + @b * @b;
+    line-height: @x + @d + @b * @b;
+    text-align: @text-center;
+    pointer-events: @none;
+}
+
+@media (min-width: 768px) {
+    .form-inline .feedback .bc-form-control-feedback {
+        top: @b * @b + @b;
+    }
+}
+
+.feedback label.sr-only ~ .bc-form-control-feedback {
+    top: @b * @b + @b;
+}
+/** Height sizing **/
+.input-large, .bc-form-row-large .bc-form-control {
+    height: @x * @b + @b * @b + @b;
+    padding: @d @d + @c + @a;
+    font-size: @x - @b;
+    line-height: 1.33;
+}
+
+.input-small, .bc-form-row-small .bc-form-control {
+    height: @x + @d;
+    padding: @c @d;
+    font-size: @d + @b;
+    line-height: @a + 1/2;
+}
+
+select.input-large, select.bc-form-row-large .bc-form-control {
+    height: @x * @b + @c + @a;
+    line-height: @x * @b + @c + @a;
+}
+
+select.input-small, select.bc-form-row-small .bc-form-control {
+    height: @x + @d;
+    line-height: @x + @d;
+}
+/* == == == == End Forms == == == == */

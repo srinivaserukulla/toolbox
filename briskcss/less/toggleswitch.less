@@ -1,0 +1,679 @@
+.switch-toggle {
+    position: @position-absolute;
+    margin-left: -9999px;
+    visibility: @hidden;
+
+    & + label {
+        display: @block;
+        position: @position-relative;
+        cursor: @cursor-pointer;
+        outline: @none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+}
+
+/* ============================================================
+  SWITCH 1 - ROUND
+============================================================ */
+/* Colors */
+.switch-blue {
+    input.switch-toggle-round {
+        &:checked {
+            & + label {
+                &:before {
+                    background-color: @switch-blue;
+                }
+            }
+        }
+    }
+}
+
+.switch-cyan {
+    input.switch-toggle-round {
+        &:checked {
+            & + label {
+                &:before {
+                    background-color: @switch-cyan;
+                }
+            }
+        }
+    }
+}
+
+.switch-green {
+    input.switch-toggle-round {
+        &:checked {
+            & + label {
+                &:before {
+                    background-color: @switch-green;
+                }
+            }
+        }
+    }
+}
+
+.switch-orange {
+    input.switch-toggle-round {
+        &:checked {
+            & + label {
+                &:before {
+                    background-color: @switch-orange;
+                }
+            }
+        }
+    }
+}
+
+.switch-red {
+    input.switch-toggle-round {
+        &:checked {
+            & + label {
+                &:before {
+                    background-color: @switch-red;
+                }
+            }
+        }
+    }
+}
+
+/* Sizes */
+
+input.switch-toggle-round {
+    &:checked {
+        & + label {
+            &:before {
+                background-color: @switch-bg;
+            }
+        }
+    }
+}
+
+.small-switch {
+    input {
+        &.switch-toggle-round {
+            & + lable {
+                padding: @b;
+                .rounded-corners(@x + @d);
+            }
+        }
+    }
+}
+
+.small-switch{
+	input{
+		&.switch-toggle-round{
+			& + label{
+				width: @y + @d !important;
+				height: @x + @d !important;
+			}
+		}
+	}
+}
+
+.switch {
+    input {
+        &.switch-toggle-round {
+            & + lable {
+                padding: @b;
+                .rounded-corners(@x + @x);
+            }
+        }
+    }
+}
+
+.switch{
+	input{
+		&.switch-toggle-round{
+			& + label{
+				width: @y + @x + @d;
+				height: @x + @x;
+			}
+		}
+	}
+}
+
+.large-switch {
+    input {
+        &.switch-toggle-round {
+            & + label {
+                padding: @b;
+                .rounded-corners(@x + @x + @d);
+            }
+        }
+    }
+}
+
+.large-switch{
+	input{
+		&.switch-toggle-round{
+			& + label{
+				width: @y + @y !important;
+				height: @y !important;
+			}
+		}
+	}
+}
+
+
+input{
+	&.switch-toggle-round{
+		& + label{
+			&:before, &:after{
+				display: @block;
+				position: @position-absolute;
+				top: @a;
+				left: @a;
+				bottom: @a;
+				content: "";
+				}
+			&:before{
+				right: @a;
+				background-color: #f1f1f1;
+				.rounded-corners(@x + @d);
+				.transition(background 0.4s);
+				}
+			}
+		}
+	}
+
+
+
+.small-switch{
+		input{
+			&.switch-toggle-round{
+				& + label{
+					&:after{
+						width: @x + @d !important;
+						background-color: @bg-white;
+					    .rounded-corners(@yf + @yf);
+						.box-shadow-outside(@z @b @c rgba(@z, @z, @z, (@b+@a)/10));
+						.transition(margin 0.4s);
+					}
+				}
+			}
+		}
+	}
+
+.switch{
+	input{
+		&.switch-toggle-round{
+			& + label{
+				&:after{
+					width: @x + @x;
+				    background-color: @bg-white;
+					.rounded-corners(@yf + @yf);
+					.box-shadow-outside(@z @b @c rgba(@z, @z, @z, (@b+@a)/10));
+					.transition(margin 0.4s);
+				}
+			}
+		}
+	}
+}
+
+.large-switch{
+	input{
+		&.switch-toggle-round{
+			& + label{
+				&:after{
+					width: @x + @x + @d !important;
+				    background-color: @bg-white;
+					.rounded-corners(@yf + @yf);
+					.box-shadow-outside(@z @b @c rgba(@z, @z, @z, (@b+@a)/10));
+					.transition(margin 0.4s);
+				}
+			}
+		}
+	}
+}
+
+
+.small-switch{
+	input{
+		&.switch-toggle-round{
+			&:checked{
+				& + label{
+					&:after{
+						margin-left: @x + @c + @b + @b !important;
+					}
+				}
+			}
+		}
+	}
+}
+
+.switch{
+	input{
+		&.switch-toggle-round{
+			&:checked{
+				& + label{
+					&:after{
+						margin-left: @x + @d + @c + @b + @a !important;
+					}
+				}
+			}
+		}
+	}
+}
+
+.large-switch{
+	input{
+		&.switch-toggle-round{
+			&:checked{
+				& + label{
+					&:after{
+						margin-left: @x + @x + @c + @b + @a !important;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+/* ============================================================
+  SWITCH 2 - ROUND FLAT
+============================================================ */
+
+.small-round{
+	input{
+		&.switch-toggle-round-flat{
+			& + label{
+				width:(@x*@b)+@x!important; height:@x+@d !important;
+			}
+		}
+	}
+}
+
+.small-round{
+	input{
+		&.switch-toggle-round-flat{
+			& + label{
+				&:after{
+					width:@x+@c !important; .rounded-corners(@x+@c);
+				}
+			}
+		}
+	}
+}
+
+.small-round{
+	input{
+		&.switch-toggle-round-flat{
+			&:checked{
+				& + label{
+					&:after{
+						margin-left:@x+@c+@b !important;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+input{
+	&.switch-toggle-round-flat{
+		& + label{
+			width:@y+@x+@d; height:@x+@x;
+		}
+	}
+}
+
+input{
+	&.switch-toggle-round-flat{
+		& + label{
+			&:after{
+				width:@x+@d+@b+@a; .rounded-corners(@x+@d+@b+@a);
+			}
+		}
+	}
+}
+
+input{
+	&.switch-toggle-round-flat{
+		&:checked{
+			& + label{
+				&:after{
+					margin-left:@x + @x - @a;
+				}
+			}
+		}
+	}
+}
+
+.large-round{
+	input{
+		&.switch-toggle-round-flat{
+			& + label{
+				width:@y * @b !important; height:@y !important;
+			}
+		}
+	}
+}
+
+.large-round{
+	input{
+		&.switch-toggle-round-flat{
+			& + label{
+				&:after{
+					width:@x + @x + @b + @a !important; .rounded-corners(@x + @x + @b + @a);
+				}
+			}
+		}
+	}
+}
+
+.large-round{
+	input{
+		&.switch-toggle-round-flat{
+			&:checked{
+				& + label{
+					&:after{
+						margin-left:@y - @a !important;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+/* Colors - Round */
+/* Blue */
+.switch-blue{
+	input{
+		&.switch-toggle-round-flat{
+			&:checked{
+				& + label{
+					background-color: @switch-round-blue;
+				}
+			}
+		}
+	}
+}
+.switch-blue{
+	input{
+		&.switch-toggle-round-flat{
+			&:checked{
+				& + label{
+					&:after{
+						background-color: @switch-round-blue;
+					}
+				}
+			}
+		}
+	}
+}
+
+/* Cyan */
+.switch-cyan{
+	input{
+		&.switch-toggle-round-flat{
+			&:checked{
+				& + label{
+					background-color: @switch-round-cyan;
+				}
+			}
+		}
+	}
+}
+.switch-cyan{
+	input{
+		&.switch-toggle-round-flat{
+			&:checked{
+				& + label{
+					&:after{
+						background-color: @switch-round-cyan;
+					}
+				}
+			}
+		}
+	}
+}
+
+/* Green */
+.switch-green{
+	input{
+		&.switch-toggle-round-flat{
+			&:checked{
+				& + label{
+					background-color: @switch-round-green;
+				}
+			}
+		}
+	}
+}
+.switch-green{
+	input{
+		&.switch-toggle-round-flat{
+			&:checked{
+				& + label{
+					&:after{
+						background-color: @switch-round-green;
+					}
+				}
+			}
+		}
+	}
+}
+
+/* Orange */
+.switch-orange{
+	input{
+		&.switch-toggle-round-flat{
+			&:checked{
+				& + label{
+					background-color: @switch-round-orange;
+				}
+			}
+		}
+	}
+}
+.switch-orange{
+	input{
+		&.switch-toggle-round-flat{
+			&:checked{
+				& + label{
+					&:after{
+						background-color: @switch-round-orange;
+					}
+				}
+			}
+		}
+	}
+}
+
+/* Red */
+.switch-red{
+	input{
+		&.switch-toggle-round-flat{
+			&:checked{
+				& + label{
+					background-color: @switch-round-red;
+				}
+			}
+		}
+	}
+}
+.switch-red{
+	input{
+		&.switch-toggle-round-flat{
+			&:checked{
+				& + label{
+					&:after{
+						background-color: @switch-round-red;
+					}
+				}
+			}
+		}
+	}
+}
+
+/* bg */
+input{
+	&.switch-toggle-round-flat{
+		&:checked{
+			& + label{
+				background-color: @switch-round-bg;
+			}
+		}
+	}
+}
+
+
+input{
+	&.switch-toggle-round-flat{
+		&:checked{
+			& + label{
+				&:after{
+					background-color: @switch-round-bg;
+				}
+			}
+		}
+	}
+}
+
+/* End Colors */
+
+
+input{
+	&.switch-toggle-round-flat{
+		& + label{
+			padding: @b;
+			background-color: #dddddd;
+			.rounded-corners(@x + @d);
+			.transition(background 0.4s);
+		}
+	}
+}
+
+input{
+	&.switch-toggle-round-flat{
+		& + label{
+			&:before, &:after{
+				display: @block;
+				position: @position-absolute;
+				content: "";
+			}
+		}
+	}
+}
+
+input{
+	&.switch-toggle-round-flat{
+		& + label{
+			&:before{
+				top: @b;
+				left: @b;
+				bottom: @b;
+				right: @b;
+				background-color: @bg-white;
+				.rounded-corners(@y + @d);
+				.transition(background 0.4s);
+			}
+		}
+	}
+}
+
+input{
+	&.switch-toggle-round-flat{
+		& + label{
+			&:after{
+				top: @b * @b;
+				left: @b * @b;
+				bottom: @b * @b;
+				background-color: #dddddd;
+				-webkit-transition: margin 0.4s, background 0.4s;
+				-moz-transition: margin 0.4s, background 0.4s;
+				-o-transition: margin 0.4s, background 0.4s;
+				transition: margin 0.4s, background 0.4s;
+			}
+		}
+	}
+}
+
+
+/* ============================================================
+  SWITCH 3 - YES NO
+============================================================ */
+
+.small-switch input.switch-toggle-yes-no + label{width:60px !important; height:30px !important; line-height: 30px !important;}
+input.switch-toggle-yes-no + label{width:80px; height:40px; line-height: 40px;}
+.large-switch input.switch-toggle-yes-no + label{width:100px !important; height:50px !important; line-height: 50px !important;}
+
+.switch-blue input.switch-toggle-yes-no + label:after{ background: @switch-yes-no-blue;}
+.switch-cyan input.switch-toggle-yes-no + label:after{ background: @switch-yes-no-cyan;}
+.switch-green input.switch-toggle-yes-no + label:after{ background: @switch-yes-no-green;}
+.switch-orange input.switch-toggle-yes-no + label:after{ background: @switch-yes-no-orange;}
+.switch-red input.switch-toggle-yes-no + label:after{ background: @switch-yes-no-red;}
+input.switch-toggle-yes-no + label:after{ background: @switch-yes-no-bg;}
+
+
+input.switch-toggle-yes-no + label {
+    padding: @b;
+}
+
+input.switch-toggle-yes-no + label:before, input.switch-toggle-yes-no + label:after {
+    display: @block;
+    position: @position-absolute;
+    top: @z;
+    left: @z;
+    bottom: @z;
+    right: @z;
+    color: @text-white;
+    font-size: @x;
+    text-align: @text-center;
+    /*line-height: @x * @b + @x;*/
+}
+
+input.switch-toggle-yes-no + label:before {
+    background-color: #dddddd;
+    content: attr(data-off);
+    -webkit-transition: -webkit-transform 0.5s;
+    -moz-transition: -moz-transform 0.5s;
+    -o-transition: -o-transform 0.5s;
+    transition: transform 0.5s;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+input.switch-toggle-yes-no + label:after {
+    content: attr(data-on);
+    -webkit-transition: -webkit-transform 0.5s;
+    -moz-transition: -moz-transform 0.5s;
+    -o-transition: -o-transform 0.5s;
+    transition: transform 0.5s;
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+input.switch-toggle-yes-no:checked + label:before {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+input.switch-toggle-yes-no:checked + label:after {
+    -webkit-transform: rotateY(0);
+    -moz-transform: rotateY(0);
+    -ms-transform: rotateY(0);
+    -o-transform: rotateY(0);
+    transform: rotateY(0);
+}

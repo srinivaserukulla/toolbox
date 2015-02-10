@@ -1,0 +1,316 @@
+/* == == == == Headings == == == == */
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+font-family: inherit;
+font-weight: 500;
+line-height: 1.1;
+color: inherit;}
+
+h1, .h1, h2, .h2, h3, .h3 {
+  margin-top: @d;
+  margin-bottom: @d;
+}
+h4, .h4, h5, .h5, h6, .h6 {
+  margin-top: @d;
+  margin-bottom: @d;
+}
+
+h1, .h1{font-size: @b * @x - @b * @b;}
+h2, .h2{font-size: @c * @c + @c;}
+h3, .h3{font-size: (@b * @d) + (@b * @b);}
+h4, .h4{font-size: (@b * @b * @b * @b) + @b;}
+h5, .h5{font-size: @d + @b + @b;}
+h6, .h6{font-size: @b * @c + @b;}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
+	small, .small {
+		font-weight: 400;
+		line-height: 1;
+		color: #777;
+	}
+}
+
+h1, h2, h3, .h1, .h2, .h3{
+	.small {
+		font-size: @yf + @df + @c; // 65
+	}
+}
+h4, h5, h6, .h4, .h5, .h6{
+	.small {
+		font-size: @yf + @xf + @c; //75
+	}
+}
+/* == == == == End Headings == == == == */
+
+/* == == == == Paragraph == == == == */ 
+p{
+	margin: @c 0 @d;
+}
+p.x-large, .x-large{
+	font-size:@x-large;
+}
+p.xx-large, .xx-large{
+	font-size:@xx-large;
+}
+p.x-small, .x-small{
+	font-size:@x-small;
+}
+p.xx-small, .xx-small{
+	font-size:@xx-small;
+}
+/* == == == == End Paragraph == == == == */ 
+
+/* == == == == Inline text elements == == == == */ 
+mark, .mark {
+	padding:@c @d;
+	background-color: @mark-bg;
+	
+}
+.del .s{
+	text-decoration: line-through;
+}
+.ins .u{
+	text-decoration: underline;
+}
+small, .small {
+  font-size: @xf * @cf + @cf;
+}
+/* == == == == End Inline text elements == == == == */ 
+/* == == == == Alignment classes == == == == */ 
+.text-left {
+  text-align: @left;
+}
+.text-right {
+  text-align: @right;
+}
+.text-center {
+  text-align: @text-center;
+}
+.text-justify {
+  text-align: @text-justify;
+}
+.text-nowrap {
+  white-space: nowrap;
+}
+.direction-left{
+	direction:ltr;
+}
+.direction-right{
+	direction:rtl;
+}
+.text-start {
+  text-align:start;
+}
+.text-end {
+  text-align:end;
+}
+/* == == == == End Alignment classes == == == == */ 
+
+/* == == == == Vertical alignment classes == == == == */ 
+.text-top  {
+  vertical-align: top !important;
+}
+.text-middle {
+  vertical-align: middle!important;
+}
+.text-bottom  {
+  vertical-align: bottom !important;
+}
+/* == == == == End Vertical alignment classes == == == == */ 
+
+/* == == == == letter spacing  == == == == */ 
+.letter-spacing1{
+	letter-spacing:@a;
+}
+.letter-spacing2{
+	letter-spacing:@b;
+}
+.letter-spacing3{
+	letter-spacing:@a + @b;
+}
+.letter-spacing4{
+	letter-spacing:@b * @b;
+}
+.letter-spacing5{
+	letter-spacing:@c;
+}
+.letter-spacing1em{
+	letter-spacing:@aem;
+}
+/* == == == == End letter spacing  == == == == */ 
+
+/* == == == == word spacing  == == == == */ 
+.word-spacing1{
+	word-spacing:@a;
+}
+.word-spacing2{
+	word-spacing:@b;
+}
+.word-spacing3{
+	word-spacing:@a + @b;
+}
+.word-spacing4{
+	word-spacing:@b * @b;
+}
+.word-spacing5{
+	word-spacing:@c;
+}
+.word-spacing1em{
+	word-spacing:@aem;
+}
+/* == == == == End word spacing  == == == == */ 
+
+/* == == == == text indent  == == == == */ 
+.text-indent2{
+	text-indent:@b;
+}
+.text-indent5{
+	text-indent:@c;
+}
+.text-indent10{
+	text-indent:@d;
+}
+.text-indent1em{
+	text-indent:@aem;
+}
+.text-indent2em{
+	text-indent:@bem;
+}
+/* == == == == End text indent  == == == == */ 
+
+/* == == == == text decoration  == == == == */  
+.text-underline{
+	text-decoration:underline;
+}
+.text-overline{
+	text-decoration:overline;
+}
+.text-decoration-none{
+	text-decoration:none;
+}
+.text-line-through{
+	text-decoration:line-through;
+}
+.text-blink{
+	text-decoration:blink;
+}
+/* == == == == End text decoration  == == == == */  
+
+/* == == == == Text Transform  == == == == */  
+.text-uppercase {
+	text-transform:uppercase;
+}
+.text-lowercase{
+	text-transform:lowercase;
+}
+.text-capitalize{
+	text-transform:capitalize;
+}
+.text-transform-none{
+	text-transform:none;
+}
+/* == == == == End Text Transform  == == == == */  
+
+/* == == == == White Space  == == == == */  
+.white-space-normal{
+	white-space: normal;
+}
+.white-space-pre{
+	white-space: pre;
+}
+.white-space-nowrap{
+	white-space: nowrap;
+}
+.white-space-pre-wrap{
+	white-space: pre-wrap;
+}
+.white-space-pre-line{
+	white-space: pre-line;
+}
+/* == == == == End White Space  == == == == */  
+
+/* == == == == Vertical Align  == == == == */
+.vertical-align-top{
+	vertical-align:top;
+}
+.vertical-align-middle{
+	vertical-align:middle;
+}
+.vertical-align-bottom{
+	vertical-align:bottom;
+}
+/* == == == == End Vertical Align  == == == == */
+
+/* == == == == Abbreviations  == == == == */
+abbr[title],
+abbr[data-original-title] {
+  cursor: help;
+  border-bottom: @a dotted #999;
+}
+.initialism {
+font-size: @yf + @xf * @bf;
+text-transform: uppercase;
+}
+/* == == == == End Abbreviations  == == == == */
+
+/* == == == == Addresses  == == == == */
+address {
+margin-bottom: @x;
+font-style: normal;
+line-height: 1.42857143;
+}
+/* == == == == End Addresses  == == == == */
+
+/* == == == == Blockquotes  == == == == */
+blockquote {
+  padding: @d @x;
+  margin: @z @z @x;
+  font-size: @x - @b - @a + @a/2;
+  border-left: @c solid #eee;
+}
+blockquote p:last-child,
+blockquote ul:last-child,
+blockquote ol:last-child {
+  margin-bottom: @z;
+}
+blockquote footer,
+blockquote small,
+blockquote .small {
+  display: block;
+  font-size: @xf * @cf - @xf;
+  line-height: 1.42857143;
+  color: #999;
+}
+blockquote footer:before,
+blockquote small:before,
+blockquote .small:before {
+  content: '\2014 \00A0';
+}
+.blockquote-reverse,
+blockquote.pull-right {
+  padding-right: @d + @c;
+  padding-left: @z;
+  text-align: @text-right;
+  border-right: @c solid #eee;
+  border-left: @z;
+}
+.blockquote-reverse footer:before,
+blockquote.pull-right footer:before,
+.blockquote-reverse small:before,
+blockquote.pull-right small:before,
+.blockquote-reverse .small:before,
+blockquote.pull-right .small:before {
+  content: '';
+}
+.blockquote-reverse footer:after,
+blockquote.pull-right footer:after,
+.blockquote-reverse small:after,
+blockquote.pull-right small:after,
+.blockquote-reverse .small:after,
+blockquote.pull-right .small:after {
+  content: '\00A0 \2014';
+}
+blockquote:before,
+blockquote:after {
+  content: "";
+}
+/* == == == == End Blockquotes  == == == == */

@@ -1,0 +1,146 @@
+.equtions {
+    line-height: 1.4;
+    padding: 0.25em 0.5em;
+}
+
+/* equilibrium */
+.dblarrow {
+    font-size: @yf * @bf + @xf + @cf;
+    top: -0.4ex;
+    margin: @z @b;
+    position: @position-relative;
+
+    &:after {
+        content: "\2190";
+        position: @position-absolute;
+        left: @z;
+        top: 0.5ex;
+    }
+}
+
+.fraction {
+    display: @inline-block;
+    vertical-align: middle;
+    margin: @z 0.2em 0.4ex;
+    text-align: @text-center;
+
+    > span {
+        display: @block;
+        padding-top: 0.15em;
+
+        &.fdn {
+            border-top: thin solid @bg-black;
+        }
+
+        &.bar {
+            display: @none;
+        }
+    }
+}
+
+
+/* Vectors */
+.sy,
+.sy-r,
+.sy-g,
+.sy-b {
+    position: @position-relative;
+    text-align: @text-center;
+}
+.sy-g {
+    color: @text-green-hover;
+}
+
+.sy-b {
+    color: @text-blue-hover;
+}
+
+.oxbr,
+.oncapital,
+.onsmall {
+    position: @position-absolute;
+    top: -1em;
+    left: @z;
+    width: @yf * @bf;
+    font-size: @yf + @xf;
+    text-align: @text-center;
+}
+
+.onsmall {
+    top: -0.7em;
+}
+
+.rarrow {
+    position: @position-relative;
+    font-size: @yf * @bf + @xf + @cf;
+    font-family: serif;
+    top: -0.5ex;
+    margin: @z @b;
+}
+
+.larrow {
+    position: @position-absolute;
+    left: @z;
+    top: 0.8ex;
+}
+
+/* Limits and mass number */
+.limes {
+    display: @inline-block;
+    margin: @b 0.2em;
+    vertical-align: middle;
+    text-align: @text-center;
+    > span{
+        display: @block;
+        margin: -0.5ex auto;
+        &.numup, &.overdn{
+            font-size: @yf + @xf;
+        }
+    }
+}
+
+/* Sum and integrals */
+.intsuma {
+    position: @position-relative;
+    display: @inline-block;
+    vertical-align: middle;
+    text-align: @text-center;
+    > span{
+        display: @block;
+        font-size: @yf + @xf;
+    }
+    > .lim-up{
+        margin-bottom: -1.0ex;
+    }
+    > .lim{
+        margin-top: -0.5ex;
+    }
+    > .sum{
+        font-size: 1.5em;
+        font-weight: lighter;
+    }
+    .sum-frac{
+        font-size: 1.5em;
+        font-weight: @yn * @bn;
+    }
+}
+
+
+/* Radicals */
+.radical {
+    position: @position-relative;
+    font-size: 1.6em;
+    vertical-align: middle;
+}
+
+.n-root {
+    position: @position-absolute;
+    top: -0.333em;
+    left: 0.333em;
+    font-size: @xf + @xf + @cf;
+}
+
+.radicand {
+    padding: 0.25em 0.25em;
+    border-top: thin @bg-black solid;
+}

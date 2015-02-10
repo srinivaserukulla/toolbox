@@ -1,0 +1,48 @@
+.label-gray {
+  background-color: @label-gray;
+  color: @label-gray-color;
+}
+.label-blue {
+  background-color: @label-blue;
+  color: @label-blue-color;
+}
+.label-cyan {
+  background-color: @label-cyan;
+  color: @label-cyan-color;
+}
+.label-green {
+  background-color: @label-green;
+  color: @label-green-color;
+}
+.label-orange {
+  background-color: @label-orange;
+  color: @label-orange-color;
+}
+.label-red {
+  background-color: @label-red;
+  color: @label-red-color;
+}
+
+
+.label {
+  display: inline;
+  padding: @lable-padding;
+  font-size: @yf+@xf+@cf;
+  font-weight: @lable-font-weight;
+  line-height: @an;
+  color: @lable-color;
+  text-align: @text-center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  .rounded-corners(@lable-rounded-corners);
+  &:empty{display: @none;}
+}
+.label[href]{&:hover, &:focus{color: @text-white; text-decoration:@none; cursor:pointer;}}
+
+
+.btn{
+    .label{
+        position: relative;
+        top: -@a;
+    }
+}

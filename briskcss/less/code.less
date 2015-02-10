@@ -1,0 +1,45 @@
+.i, .cite, .em, .var, .address, .dfn {
+    font-style: italic;
+}
+
+code {
+    padding: @b @b + @b;
+    font-size: @yf + @xf + @xf;
+    color: #c7254e;
+    white-space: nowrap;
+    background-color: #f9f2f4;
+    .rounded-corners(@b + @b);
+}
+
+kbd {
+    padding: @b @b + @b;
+    font-size: @yf + @xf + @xf;
+    color: @text-white;
+    background-color: @gray-80;
+    .rounded-corners(@b + @a);
+    .box-shadow(inset @z -@a @z rgba(@z, @z, @z, 0.25));
+}
+
+pre {
+    display: @block;
+    padding: 9.5px;
+    margin: @z @z @d;
+    font-size:  @d + @b + @a;
+    line-height: 1.42857143;
+    color: @dark-gray-active;
+    word-break: break-all;
+    word-wrap: break-word;
+    background-color: #f5f5f5;
+    border: @a solid #e1e1e8;
+    .rounded-corners(@b + @b);
+}
+
+pre code {
+    padding: @z;
+    font-size: inherit;
+    color: inherit;
+    white-space: pre-wrap;
+    background-color: transparent;
+    .rounded-corners(@z);
+}
+
